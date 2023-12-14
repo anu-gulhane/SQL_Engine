@@ -1,0 +1,27 @@
+LOAD Student
+LOAD Marks
+LOAD Advisor
+q4_cross <- CROSS Student Marks
+EXPORT q4_cross
+q4_select <- SELECT Student_Stud_Id == Marks_Stud_Id FROM q4_cross
+EXPORT q4_select
+
+q4_math <- SELECT Maths_marks >= 70 FROM q4_select
+
+EXPORT q4_math
+
+q4_physics <- SELECT Physics_marks > 60 FROM q4_math
+
+EXPORT q4_physics
+
+q4_age_16 <- SELECT Stud_age >= 16 FROM q4_physics
+
+EXPORT q4_age_16
+
+q4_final <- SELECT Stud_age <= 18 FROM q4_age_16
+
+EXPORT q4_final
+
+q_d <- PROJECT Student_Stud_Id,Maths_marks,Physics_marks,Stud_age FROM q4_final
+
+EXPORT q_d

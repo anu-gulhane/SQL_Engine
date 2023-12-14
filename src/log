@@ -1,0 +1,5683 @@
+BufferManager::BufferManager
+ParseQuery::clear
+clear
+
+Reading New Command: 
+LOAD student_data
+doCommand
+Tokesized query
+LOAD
+student_data
+syntacticParse
+syntacticParseLOAD
+semanticParse
+semanticParseLOAD
+TableCatalogue::isTable
+executing command
+executeLOAD
+Table::Table
+Table::load
+Table::extractColumnNames
+Table::blockify
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+BufferManager::writePage
+Page::Page
+Page::writePage
+TableCatalogue::~insertTable
+ParseQuery::clear
+clear
+
+Reading New Command: 
+SORT student_data BY B IN ASC
+doCommand
+Tokesized query
+SORT
+student_data
+BY
+B
+IN
+ASC
+syntacticParse
+syntacticParseSORT
+order of columns: in_pos4
+ASC
+semanticParse
+semanticParseSORT
+TableCatalogue::isTable
+TableCatalogue::isColumnFromTable
+TableCatalogue::isTable
+Table::isColumn
+executing command
+pair (1 0 )
+external merge sort 0 18 student_data
+ inside external merge sort 0 18 student_data
+partition size 3
+partition ranges 0 2
+ inside external merge sort 0 2 student_data
+partition size 1
+partition ranges 0 0
+internalSorting 0
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+1 24 84 5
+2 24 91 5
+3 23 83 5
+4 25 86 5
+5 18 93 5
+6 18 84 5
+7 21 51 5
+8 24 93 5
+9 22 80 5
+10 23 85 5
+11 24 95 5
+12 18 91 5
+13 24 81 5
+14 23 80 5
+15 23 70 5
+16 20 62 5
+17 23 63 5
+18 22 83 5
+19 20 73 5
+20 20 99 5
+21 22 52 5
+22 22 89 5
+23 24 68 5
+24 19 74 5
+25 22 92 5
+26 22 81 5
+27 24 81 5
+28 25 89 5
+29 23 54 5
+30 25 89 5
+31 19 96 5
+32 24 79 5
+33 21 63 5
+34 21 82 5
+35 24 75 5
+36 25 52 5
+37 19 96 5
+38 21 86 5
+39 19 68 5
+40 18 84 5
+41 21 65 5
+42 19 78 5
+43 22 77 5
+44 20 72 5
+45 21 93 5
+46 24 81 5
+47 24 94 5
+48 19 84 5
+49 25 68 5
+50 19 100 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 1 1
+internalSorting 1
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+51 21 76 5
+52 21 79 5
+53 23 72 5
+54 24 82 5
+55 19 88 5
+56 24 51 5
+57 22 59 5
+58 22 90 5
+59 23 98 5
+60 21 78 5
+61 19 66 5
+62 23 76 5
+63 23 68 5
+64 22 94 5
+65 18 65 5
+66 18 63 5
+67 22 58 5
+68 21 57 5
+69 20 76 5
+70 25 87 5
+71 25 60 5
+72 21 74 5
+73 19 86 5
+74 21 60 5
+75 19 93 5
+76 19 73 5
+77 24 99 5
+78 23 78 5
+79 22 83 5
+80 20 68 5
+81 24 60 5
+82 23 97 5
+83 25 74 5
+84 18 80 5
+85 20 71 5
+86 22 79 5
+87 25 58 5
+88 18 94 5
+89 23 94 5
+90 23 60 5
+91 18 53 5
+92 19 98 5
+93 24 91 5
+94 20 96 5
+95 23 100 5
+96 24 51 5
+97 18 60 5
+98 21 80 5
+99 21 78 5
+100 25 54 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 2 2
+internalSorting 2
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+101 25 97 5
+102 23 59 5
+103 23 58 5
+104 21 56 5
+105 25 88 5
+106 22 50 5
+107 18 95 5
+108 24 88 5
+109 20 55 5
+110 24 96 5
+111 24 68 5
+112 24 92 5
+113 21 55 5
+114 23 88 5
+115 20 83 5
+116 18 82 5
+117 22 54 5
+118 24 72 5
+119 18 70 5
+120 20 58 5
+121 23 52 5
+122 23 53 5
+123 24 61 5
+124 23 52 5
+125 19 60 5
+126 20 53 5
+127 23 76 5
+128 19 63 5
+129 20 58 5
+130 22 63 5
+131 23 55 5
+132 20 84 5
+133 25 77 5
+134 24 81 5
+135 23 82 5
+136 18 87 5
+137 19 72 5
+138 23 66 5
+139 24 52 5
+140 22 71 5
+141 23 62 5
+142 20 78 5
+143 20 92 5
+144 20 96 5
+145 24 74 5
+146 19 79 5
+147 21 60 5
+148 18 80 5
+149 19 51 5
+150 23 56 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 3 2
+partition ranges 3 2
+partition ranges 3 2
+partition ranges 3 2
+partition ranges 3 2
+partition ranges 3 2
+ calling merge function 0 2 student_data
+reading data of 0
+reading data of block 0 in merge function
+in read data ../data/temp/student_data_Page0
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 1
+reading data of block 1 in merge function
+in read data ../data/temp/student_data_Page1
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 2
+reading data of block 2 in merge function
+in read data ../data/temp/student_data_Page2
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 2
+data from 148 18 80
+partition number 2
+data from 136 18 87
+partition number 2
+data from 107 18 95
+partition number 2
+data from 119 18 70
+partition number 2
+data from 116 18 82
+partition number 1
+data from 97 18 60
+partition number 1
+data from 91 18 53
+partition number 1
+data from 88 18 94
+partition number 1
+data from 66 18 63
+partition number 1
+data from 84 18 80
+partition number 1
+data from 65 18 65
+partition number 0
+data from 5 18 93
+partition number 0
+data from 6 18 84
+partition number 0
+data from 40 18 84
+partition number 0
+data from 12 18 91
+partition number 0
+data from 24 19 74
+partition number 0
+data from 31 19 96
+partition number 0
+data from 37 19 96
+partition number 0
+data from 39 19 68
+partition number 0
+data from 42 19 78
+partition number 0
+data from 48 19 84
+partition number 0
+data from 50 19 100
+partition number 1
+data from 73 19 86
+partition number 1
+data from 55 19 88
+partition number 1
+data from 75 19 93
+partition number 1
+data from 92 19 98
+partition number 1
+data from 61 19 66
+partition number 1
+data from 76 19 73
+partition number 2
+data from 149 19 51
+partition number 2
+data from 128 19 63
+partition number 2
+data from 125 19 60
+partition number 2
+data from 137 19 72
+partition number 2
+data from 146 19 79
+partition number 2
+data from 143 20 92
+partition number 2
+data from 129 20 58
+partition number 2
+data from 132 20 84
+partition number 2
+data from 126 20 53
+partition number 2
+data from 120 20 58
+partition number 2
+data from 109 20 55
+partition number 2
+data from 115 20 83
+partition number 2
+data from 142 20 78
+partition number 2
+data from 144 20 96
+partition number 1
+data from 85 20 71
+partition number 1
+data from 69 20 76
+partition number 1
+data from 80 20 68
+partition number 1
+data from 94 20 96
+partition number 0
+data from 44 20 72
+partition number 0
+data from 16 20 62
+partition number 0
+data from 19 20 73
+partition number 0
+data from 20 20 99
+writing page+ 0 50
+ temp writePage
+temp write page successfull
+partition number 0
+data from 41 21 65
+partition number 0
+data from 7 21 51
+partition number 0
+data from 45 21 93
+partition number 0
+data from 38 21 86
+partition number 0
+data from 34 21 82
+partition number 0
+data from 33 21 63
+partition number 1
+data from 72 21 74
+partition number 1
+data from 52 21 79
+partition number 1
+data from 74 21 60
+partition number 1
+data from 98 21 80
+partition number 1
+data from 99 21 78
+partition number 1
+data from 68 21 57
+partition number 1
+data from 51 21 76
+partition number 1
+data from 60 21 78
+partition number 2
+data from 147 21 60
+partition number 2
+data from 104 21 56
+partition number 2
+data from 113 21 55
+partition number 2
+data from 117 22 54
+partition number 2
+data from 140 22 71
+partition number 2
+data from 106 22 50
+partition number 2
+data from 130 22 63
+partition number 1
+data from 57 22 59
+partition number 1
+data from 67 22 58
+partition number 1
+data from 64 22 94
+partition number 1
+data from 58 22 90
+partition number 1
+data from 79 22 83
+partition number 1
+data from 86 22 79
+partition number 0
+data from 43 22 77
+partition number 0
+data from 25 22 92
+partition number 0
+data from 26 22 81
+partition number 0
+data from 22 22 89
+partition number 0
+data from 21 22 52
+partition number 0
+data from 18 22 83
+partition number 0
+data from 9 22 80
+partition number 0
+data from 3 23 83
+partition number 0
+data from 29 23 54
+partition number 0
+data from 10 23 85
+partition number 0
+data from 17 23 63
+partition number 0
+data from 15 23 70
+partition number 0
+data from 14 23 80
+partition number 1
+data from 82 23 97
+partition number 1
+data from 90 23 60
+partition number 1
+data from 89 23 94
+partition number 1
+data from 59 23 98
+partition number 1
+data from 53 23 72
+partition number 1
+data from 62 23 76
+partition number 1
+data from 63 23 68
+partition number 1
+data from 78 23 78
+partition number 1
+data from 95 23 100
+partition number 2
+data from 141 23 62
+writing page+ 1 50
+ temp writePage
+temp write page successfull
+partition number 2
+data from 138 23 66
+partition number 2
+data from 135 23 82
+partition number 2
+data from 150 23 56
+partition number 2
+data from 127 23 76
+partition number 2
+data from 102 23 59
+partition number 2
+data from 103 23 58
+partition number 2
+data from 114 23 88
+partition number 2
+data from 121 23 52
+partition number 2
+data from 122 23 53
+partition number 2
+data from 124 23 52
+partition number 2
+data from 131 23 55
+partition number 2
+data from 123 24 61
+partition number 2
+data from 139 24 52
+partition number 2
+data from 118 24 72
+partition number 2
+data from 134 24 81
+partition number 2
+data from 112 24 92
+partition number 2
+data from 111 24 68
+partition number 2
+data from 110 24 96
+partition number 2
+data from 145 24 74
+partition number 2
+data from 108 24 88
+partition number 1
+data from 54 24 82
+partition number 1
+data from 56 24 51
+partition number 1
+data from 96 24 51
+partition number 1
+data from 93 24 91
+partition number 1
+data from 81 24 60
+partition number 1
+data from 77 24 99
+partition number 0
+data from 2 24 91
+partition number 0
+data from 23 24 68
+partition number 0
+data from 47 24 94
+partition number 0
+data from 46 24 81
+partition number 0
+data from 8 24 93
+partition number 0
+data from 11 24 95
+partition number 0
+data from 13 24 81
+partition number 0
+data from 35 24 75
+partition number 0
+data from 32 24 79
+partition number 0
+data from 27 24 81
+partition number 0
+data from 1 24 84
+partition number 0
+data from 36 25 52
+partition number 0
+data from 4 25 86
+partition number 0
+data from 30 25 89
+partition number 0
+data from 28 25 89
+partition number 0
+data from 49 25 68
+partition number 1
+data from 71 25 60
+partition number 1
+data from 100 25 54
+partition number 1
+data from 87 25 58
+partition number 1
+data from 83 25 74
+partition number 1
+data from 70 25 87
+partition number 2
+data from 105 25 88
+partition number 2
+data from 133 25 77
+partition number 2
+data from 101 25 97
+writing page+ 2 50
+ temp writePage
+temp write page successfull
+reading data from temp pages../data/temp/temp_student_data_Page0
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page1
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page2
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+merge completed
+partition ranges 3 4
+ inside external merge sort 3 4 student_data
+partition size 1
+partition ranges 3 3
+internalSorting 3
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+151 19 68 5
+152 20 75 5
+153 19 72 5
+154 20 91 5
+155 19 59 5
+156 25 68 5
+157 24 85 5
+158 24 69 5
+159 19 98 5
+160 18 56 5
+161 21 84 5
+162 18 54 5
+163 21 80 5
+164 19 60 5
+165 19 94 5
+166 19 70 5
+167 24 83 5
+168 23 100 5
+169 21 91 5
+170 22 77 5
+171 20 56 5
+172 21 66 5
+173 23 79 5
+174 24 89 5
+175 24 66 5
+176 20 88 5
+177 25 95 5
+178 21 79 5
+179 25 91 5
+180 19 70 5
+181 21 76 5
+182 23 55 5
+183 23 66 5
+184 21 67 5
+185 22 57 5
+186 23 59 5
+187 23 60 5
+188 22 53 5
+189 25 54 5
+190 25 63 5
+191 24 68 5
+192 18 71 5
+193 19 66 5
+194 22 58 5
+195 20 55 5
+196 25 70 5
+197 23 51 5
+198 21 53 5
+199 18 52 5
+200 19 63 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 4 4
+internalSorting 4
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+201 20 50 5
+202 24 76 5
+203 22 77 5
+204 19 73 5
+205 20 78 5
+206 25 66 5
+207 21 55 5
+208 25 80 5
+209 19 59 5
+210 18 98 5
+211 22 59 5
+212 21 79 5
+213 23 94 5
+214 22 74 5
+215 19 69 5
+216 21 87 5
+217 25 90 5
+218 18 51 5
+219 21 72 5
+220 22 96 5
+221 24 65 5
+222 25 57 5
+223 25 93 5
+224 23 82 5
+225 22 66 5
+226 24 96 5
+227 21 73 5
+228 20 65 5
+229 20 68 5
+230 21 51 5
+231 19 51 5
+232 22 52 5
+233 23 98 5
+234 25 80 5
+235 18 80 5
+236 19 50 5
+237 23 51 5
+238 20 78 5
+239 18 71 5
+240 18 64 5
+241 21 77 5
+242 25 89 5
+243 21 88 5
+244 22 50 5
+245 19 50 5
+246 21 70 5
+247 19 69 5
+248 22 58 5
+249 18 80 5
+250 24 83 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 5 4
+partition ranges 5 4
+partition ranges 5 4
+partition ranges 5 4
+partition ranges 5 4
+partition ranges 5 4
+partition ranges 5 4
+ calling merge function 3 4 student_data
+reading data of 3
+reading data of block 3 in merge function
+in read data ../data/temp/student_data_Page3
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 4
+reading data of block 4 in merge function
+in read data ../data/temp/student_data_Page4
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 1
+data from 240 18 64
+partition number 1
+data from 249 18 80
+partition number 1
+data from 239 18 71
+partition number 1
+data from 210 18 98
+partition number 1
+data from 235 18 80
+partition number 1
+data from 218 18 51
+partition number 0
+data from 199 18 52
+partition number 0
+data from 162 18 54
+partition number 0
+data from 192 18 71
+partition number 0
+data from 160 18 56
+partition number 0
+data from 200 19 63
+partition number 0
+data from 166 19 70
+partition number 0
+data from 165 19 94
+partition number 0
+data from 164 19 60
+partition number 0
+data from 151 19 68
+partition number 0
+data from 180 19 70
+partition number 0
+data from 159 19 98
+partition number 0
+data from 193 19 66
+partition number 0
+data from 155 19 59
+partition number 0
+data from 153 19 72
+partition number 1
+data from 245 19 50
+partition number 1
+data from 204 19 73
+partition number 1
+data from 209 19 59
+partition number 1
+data from 236 19 50
+partition number 1
+data from 231 19 51
+partition number 1
+data from 215 19 69
+partition number 1
+data from 247 19 69
+partition number 1
+data from 201 20 50
+partition number 1
+data from 228 20 65
+partition number 1
+data from 229 20 68
+partition number 1
+data from 238 20 78
+partition number 1
+data from 205 20 78
+partition number 0
+data from 195 20 55
+partition number 0
+data from 176 20 88
+partition number 0
+data from 171 20 56
+partition number 0
+data from 152 20 75
+partition number 0
+data from 154 20 91
+partition number 0
+data from 184 21 67
+partition number 0
+data from 198 21 53
+partition number 0
+data from 181 21 76
+partition number 0
+data from 161 21 84
+partition number 0
+data from 178 21 79
+partition number 0
+data from 163 21 80
+partition number 0
+data from 169 21 91
+partition number 0
+data from 172 21 66
+partition number 1
+data from 230 21 51
+partition number 1
+data from 243 21 88
+partition number 1
+data from 227 21 73
+partition number 1
+data from 241 21 77
+partition number 1
+data from 246 21 70
+writing page+ 3 50
+ temp writePage
+temp write page successfull
+partition number 1
+data from 219 21 72
+partition number 1
+data from 216 21 87
+partition number 1
+data from 207 21 55
+partition number 1
+data from 212 21 79
+partition number 1
+data from 225 22 66
+partition number 1
+data from 244 22 50
+partition number 1
+data from 203 22 77
+partition number 1
+data from 220 22 96
+partition number 1
+data from 214 22 74
+partition number 1
+data from 232 22 52
+partition number 1
+data from 248 22 58
+partition number 1
+data from 211 22 59
+partition number 0
+data from 188 22 53
+partition number 0
+data from 170 22 77
+partition number 0
+data from 194 22 58
+partition number 0
+data from 185 22 57
+partition number 0
+data from 183 23 66
+partition number 0
+data from 168 23 100
+partition number 0
+data from 173 23 79
+partition number 0
+data from 186 23 59
+partition number 0
+data from 187 23 60
+partition number 0
+data from 197 23 51
+partition number 0
+data from 182 23 55
+partition number 1
+data from 233 23 98
+partition number 1
+data from 237 23 51
+partition number 1
+data from 213 23 94
+partition number 1
+data from 224 23 82
+partition number 1
+data from 226 24 96
+partition number 1
+data from 250 24 83
+partition number 1
+data from 221 24 65
+partition number 1
+data from 202 24 76
+partition number 0
+data from 191 24 68
+partition number 0
+data from 174 24 89
+partition number 0
+data from 167 24 83
+partition number 0
+data from 157 24 85
+partition number 0
+data from 158 24 69
+partition number 0
+data from 175 24 66
+partition number 0
+data from 179 25 91
+partition number 0
+data from 156 25 68
+partition number 0
+data from 196 25 70
+partition number 0
+data from 190 25 63
+partition number 0
+data from 189 25 54
+partition number 0
+data from 177 25 95
+partition number 1
+data from 242 25 89
+partition number 1
+data from 234 25 80
+partition number 1
+data from 223 25 93
+partition number 1
+data from 222 25 57
+partition number 1
+data from 217 25 90
+partition number 1
+data from 208 25 80
+partition number 1
+data from 206 25 66
+writing page+ 4 50
+ temp writePage
+temp write page successfull
+reading data from temp pages../data/temp/temp_student_data_Page3
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page4
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+merge completed
+partition ranges 5 6
+ inside external merge sort 5 6 student_data
+partition size 1
+partition ranges 5 5
+internalSorting 5
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+251 24 73 5
+252 20 53 5
+253 19 63 5
+254 25 78 5
+255 22 81 5
+256 24 88 5
+257 19 68 5
+258 18 57 5
+259 20 62 5
+260 19 91 5
+261 19 53 5
+262 21 87 5
+263 24 66 5
+264 22 79 5
+265 18 87 5
+266 20 70 5
+267 19 92 5
+268 24 100 5
+269 25 88 5
+270 20 76 5
+271 23 94 5
+272 24 96 5
+273 23 67 5
+274 18 78 5
+275 25 96 5
+276 22 78 5
+277 24 51 5
+278 25 68 5
+279 24 73 5
+280 20 77 5
+281 20 88 5
+282 18 95 5
+283 23 88 5
+284 22 91 5
+285 18 89 5
+286 25 73 5
+287 18 100 5
+288 20 97 5
+289 24 60 5
+290 20 72 5
+291 24 89 5
+292 25 60 5
+293 23 99 5
+294 23 51 5
+295 24 94 5
+296 25 64 5
+297 22 95 5
+298 19 52 5
+299 18 100 5
+300 21 54 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 6 6
+internalSorting 6
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+301 20 55 5
+302 18 82 5
+303 20 91 5
+304 20 52 5
+305 18 82 5
+306 18 76 5
+307 21 63 5
+308 22 85 5
+309 22 77 5
+310 22 56 5
+311 19 81 5
+312 23 82 5
+313 21 83 5
+314 21 55 5
+315 22 90 5
+316 22 55 5
+317 19 73 5
+318 24 81 5
+319 18 65 5
+320 20 53 5
+321 23 64 5
+322 22 50 5
+323 22 93 5
+324 18 79 5
+325 19 81 5
+326 22 87 5
+327 24 80 5
+328 19 63 5
+329 20 85 5
+330 23 65 5
+331 19 55 5
+332 22 62 5
+333 18 73 5
+334 24 94 5
+335 19 91 5
+336 22 60 5
+337 19 89 5
+338 22 83 5
+339 20 63 5
+340 23 70 5
+341 25 69 5
+342 18 94 5
+343 19 92 5
+344 19 91 5
+345 22 65 5
+346 22 98 5
+347 20 78 5
+348 20 86 5
+349 22 94 5
+350 22 51 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 7 6
+partition ranges 7 6
+partition ranges 7 6
+partition ranges 7 6
+partition ranges 7 6
+partition ranges 7 6
+partition ranges 7 6
+ calling merge function 5 6 student_data
+reading data of 5
+reading data of block 5 in merge function
+in read data ../data/temp/student_data_Page5
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 6
+reading data of block 6 in merge function
+in read data ../data/temp/student_data_Page6
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 1
+data from 302 18 82
+partition number 1
+data from 333 18 73
+partition number 1
+data from 324 18 79
+partition number 1
+data from 342 18 94
+partition number 1
+data from 319 18 65
+partition number 1
+data from 306 18 76
+partition number 1
+data from 305 18 82
+partition number 0
+data from 274 18 78
+partition number 0
+data from 282 18 95
+partition number 0
+data from 299 18 100
+partition number 0
+data from 265 18 87
+partition number 0
+data from 285 18 89
+partition number 0
+data from 287 18 100
+partition number 0
+data from 258 18 57
+partition number 0
+data from 267 19 92
+partition number 0
+data from 261 19 53
+partition number 0
+data from 260 19 91
+partition number 0
+data from 257 19 68
+partition number 0
+data from 298 19 52
+partition number 0
+data from 253 19 63
+partition number 1
+data from 325 19 81
+partition number 1
+data from 343 19 92
+partition number 1
+data from 344 19 91
+partition number 1
+data from 317 19 73
+partition number 1
+data from 337 19 89
+partition number 1
+data from 328 19 63
+partition number 1
+data from 331 19 55
+partition number 1
+data from 311 19 81
+partition number 1
+data from 335 19 91
+partition number 1
+data from 329 20 85
+partition number 1
+data from 347 20 78
+partition number 1
+data from 348 20 86
+partition number 1
+data from 320 20 53
+partition number 1
+data from 301 20 55
+partition number 1
+data from 304 20 52
+partition number 1
+data from 339 20 63
+partition number 1
+data from 303 20 91
+partition number 0
+data from 270 20 76
+partition number 0
+data from 281 20 88
+partition number 0
+data from 280 20 77
+partition number 0
+data from 288 20 97
+partition number 0
+data from 266 20 70
+partition number 0
+data from 259 20 62
+partition number 0
+data from 290 20 72
+partition number 0
+data from 252 20 53
+partition number 0
+data from 300 21 54
+partition number 0
+data from 262 21 87
+partition number 1
+data from 307 21 63
+partition number 1
+data from 314 21 55
+partition number 1
+data from 313 21 83
+writing page+ 5 50
+ temp writePage
+temp write page successfull
+partition number 1
+data from 338 22 83
+partition number 1
+data from 345 22 65
+partition number 1
+data from 346 22 98
+partition number 1
+data from 336 22 60
+partition number 1
+data from 349 22 94
+partition number 1
+data from 350 22 51
+partition number 1
+data from 322 22 50
+partition number 1
+data from 308 22 85
+partition number 1
+data from 309 22 77
+partition number 1
+data from 310 22 56
+partition number 1
+data from 315 22 90
+partition number 1
+data from 316 22 55
+partition number 1
+data from 323 22 93
+partition number 1
+data from 326 22 87
+partition number 1
+data from 332 22 62
+partition number 0
+data from 255 22 81
+partition number 0
+data from 276 22 78
+partition number 0
+data from 297 22 95
+partition number 0
+data from 284 22 91
+partition number 0
+data from 264 22 79
+partition number 0
+data from 294 23 51
+partition number 0
+data from 271 23 94
+partition number 0
+data from 293 23 99
+partition number 0
+data from 283 23 88
+partition number 0
+data from 273 23 67
+partition number 1
+data from 340 23 70
+partition number 1
+data from 321 23 64
+partition number 1
+data from 312 23 82
+partition number 1
+data from 330 23 65
+partition number 1
+data from 334 24 94
+partition number 1
+data from 318 24 81
+partition number 1
+data from 327 24 80
+partition number 0
+data from 263 24 66
+partition number 0
+data from 251 24 73
+partition number 0
+data from 295 24 94
+partition number 0
+data from 291 24 89
+partition number 0
+data from 256 24 88
+partition number 0
+data from 289 24 60
+partition number 0
+data from 268 24 100
+partition number 0
+data from 279 24 73
+partition number 0
+data from 277 24 51
+partition number 0
+data from 272 24 96
+partition number 0
+data from 286 25 73
+partition number 0
+data from 292 25 60
+partition number 0
+data from 269 25 88
+partition number 0
+data from 278 25 68
+partition number 0
+data from 296 25 64
+partition number 0
+data from 275 25 96
+partition number 0
+data from 254 25 78
+partition number 1
+data from 341 25 69
+writing page+ 6 50
+ temp writePage
+temp write page successfull
+reading data from temp pages../data/temp/temp_student_data_Page5
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page6
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+merge completed
+partition ranges 7 8
+ inside external merge sort 7 8 student_data
+partition size 1
+partition ranges 7 7
+internalSorting 7
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+351 19 67 5
+352 18 96 5
+353 18 84 5
+354 23 55 5
+355 19 97 5
+356 19 100 5
+357 22 59 5
+358 18 53 5
+359 21 54 5
+360 25 57 5
+361 24 75 5
+362 25 55 5
+363 25 87 5
+364 25 84 5
+365 18 96 5
+366 18 82 5
+367 19 99 5
+368 18 79 5
+369 21 82 5
+370 21 52 5
+371 18 84 5
+372 19 88 5
+373 19 85 5
+374 18 65 5
+375 23 67 5
+376 22 52 5
+377 25 79 5
+378 22 98 5
+379 20 51 5
+380 19 96 5
+381 25 66 5
+382 25 99 5
+383 24 54 5
+384 24 99 5
+385 23 62 5
+386 24 91 5
+387 24 69 5
+388 20 65 5
+389 21 100 5
+390 18 57 5
+391 22 88 5
+392 18 80 5
+393 23 62 5
+394 24 70 5
+395 18 76 5
+396 20 96 5
+397 23 83 5
+398 23 83 5
+399 19 77 5
+400 25 94 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 8 8
+internalSorting 8
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+401 21 61 5
+402 22 64 5
+403 21 70 5
+404 19 68 5
+405 25 81 5
+406 21 54 5
+407 23 53 5
+408 23 55 5
+409 22 57 5
+410 21 54 5
+411 18 62 5
+412 25 88 5
+413 21 96 5
+414 22 57 5
+415 22 78 5
+416 25 98 5
+417 25 61 5
+418 19 85 5
+419 24 99 5
+420 22 97 5
+421 25 100 5
+422 21 74 5
+423 22 56 5
+424 18 50 5
+425 23 77 5
+426 23 94 5
+427 25 90 5
+428 24 88 5
+429 25 66 5
+430 23 82 5
+431 23 51 5
+432 25 82 5
+433 24 83 5
+434 18 76 5
+435 24 58 5
+436 24 50 5
+437 21 89 5
+438 23 80 5
+439 18 68 5
+440 19 97 5
+441 21 55 5
+442 22 50 5
+443 19 90 5
+444 25 95 5
+445 20 81 5
+446 20 78 5
+447 21 56 5
+448 18 91 5
+449 18 50 5
+450 18 79 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 9 8
+partition ranges 9 8
+partition ranges 9 8
+partition ranges 9 8
+partition ranges 9 8
+partition ranges 9 8
+partition ranges 9 8
+ calling merge function 7 8 student_data
+reading data of 7
+reading data of block 7 in merge function
+in read data ../data/temp/student_data_Page7
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 8
+reading data of block 8 in merge function
+in read data ../data/temp/student_data_Page8
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 1
+data from 424 18 50
+partition number 1
+data from 434 18 76
+partition number 1
+data from 450 18 79
+partition number 1
+data from 449 18 50
+partition number 1
+data from 448 18 91
+partition number 1
+data from 439 18 68
+partition number 1
+data from 411 18 62
+partition number 0
+data from 352 18 96
+partition number 0
+data from 374 18 65
+partition number 0
+data from 371 18 84
+partition number 0
+data from 368 18 79
+partition number 0
+data from 366 18 82
+partition number 0
+data from 365 18 96
+partition number 0
+data from 390 18 57
+partition number 0
+data from 392 18 80
+partition number 0
+data from 395 18 76
+partition number 0
+data from 358 18 53
+partition number 0
+data from 353 18 84
+partition number 0
+data from 380 19 96
+partition number 0
+data from 351 19 67
+partition number 0
+data from 356 19 100
+partition number 0
+data from 355 19 97
+partition number 0
+data from 367 19 99
+partition number 0
+data from 399 19 77
+partition number 0
+data from 373 19 85
+partition number 0
+data from 372 19 88
+partition number 1
+data from 404 19 68
+partition number 1
+data from 440 19 97
+partition number 1
+data from 443 19 90
+partition number 1
+data from 418 19 85
+partition number 1
+data from 446 20 78
+partition number 1
+data from 445 20 81
+partition number 0
+data from 379 20 51
+partition number 0
+data from 388 20 65
+partition number 0
+data from 396 20 96
+partition number 0
+data from 370 21 52
+partition number 0
+data from 369 21 82
+partition number 0
+data from 389 21 100
+partition number 0
+data from 359 21 54
+partition number 1
+data from 413 21 96
+partition number 1
+data from 422 21 74
+partition number 1
+data from 437 21 89
+partition number 1
+data from 441 21 55
+partition number 1
+data from 410 21 54
+partition number 1
+data from 447 21 56
+partition number 1
+data from 406 21 54
+partition number 1
+data from 403 21 70
+partition number 1
+data from 401 21 61
+partition number 1
+data from 442 22 50
+partition number 1
+data from 402 22 64
+writing page+ 7 50
+ temp writePage
+temp write page successfull
+partition number 1
+data from 409 22 57
+partition number 1
+data from 414 22 57
+partition number 1
+data from 415 22 78
+partition number 1
+data from 420 22 97
+partition number 1
+data from 423 22 56
+partition number 0
+data from 376 22 52
+partition number 0
+data from 391 22 88
+partition number 0
+data from 378 22 98
+partition number 0
+data from 357 22 59
+partition number 0
+data from 354 23 55
+partition number 0
+data from 398 23 83
+partition number 0
+data from 385 23 62
+partition number 0
+data from 375 23 67
+partition number 0
+data from 397 23 83
+partition number 0
+data from 393 23 62
+partition number 1
+data from 426 23 94
+partition number 1
+data from 407 23 53
+partition number 1
+data from 408 23 55
+partition number 1
+data from 438 23 80
+partition number 1
+data from 425 23 77
+partition number 1
+data from 431 23 51
+partition number 1
+data from 430 23 82
+partition number 1
+data from 435 24 58
+partition number 1
+data from 436 24 50
+partition number 1
+data from 433 24 83
+partition number 1
+data from 419 24 99
+partition number 1
+data from 428 24 88
+partition number 0
+data from 383 24 54
+partition number 0
+data from 384 24 99
+partition number 0
+data from 386 24 91
+partition number 0
+data from 387 24 69
+partition number 0
+data from 361 24 75
+partition number 0
+data from 394 24 70
+partition number 0
+data from 363 25 87
+partition number 0
+data from 400 25 94
+partition number 0
+data from 360 25 57
+partition number 0
+data from 362 25 55
+partition number 0
+data from 364 25 84
+partition number 0
+data from 382 25 99
+partition number 0
+data from 381 25 66
+partition number 0
+data from 377 25 79
+partition number 1
+data from 405 25 81
+partition number 1
+data from 427 25 90
+partition number 1
+data from 412 25 88
+partition number 1
+data from 429 25 66
+partition number 1
+data from 444 25 95
+partition number 1
+data from 416 25 98
+partition number 1
+data from 417 25 61
+partition number 1
+data from 432 25 82
+partition number 1
+data from 421 25 100
+writing page+ 8 50
+ temp writePage
+temp write page successfull
+reading data from temp pages../data/temp/temp_student_data_Page7
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page8
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+merge completed
+partition ranges 9 10
+ inside external merge sort 9 10 student_data
+partition size 1
+partition ranges 9 9
+internalSorting 9
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+451 19 93 5
+452 24 68 5
+453 22 95 5
+454 21 54 5
+455 23 96 5
+456 23 86 5
+457 25 99 5
+458 19 53 5
+459 25 51 5
+460 25 87 5
+461 23 95 5
+462 18 73 5
+463 19 53 5
+464 22 85 5
+465 21 88 5
+466 25 75 5
+467 23 51 5
+468 19 88 5
+469 25 59 5
+470 24 86 5
+471 21 82 5
+472 23 57 5
+473 18 83 5
+474 21 56 5
+475 23 57 5
+476 20 85 5
+477 24 78 5
+478 21 95 5
+479 19 100 5
+480 23 53 5
+481 20 70 5
+482 25 77 5
+483 22 100 5
+484 25 84 5
+485 20 85 5
+486 20 99 5
+487 19 78 5
+488 25 60 5
+489 24 61 5
+490 23 83 5
+491 19 86 5
+492 20 77 5
+493 20 90 5
+494 22 78 5
+495 21 64 5
+496 24 89 5
+497 20 84 5
+498 19 70 5
+499 25 80 5
+500 18 51 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 10 10
+internalSorting 10
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+501 24 57 5
+502 18 99 5
+503 22 75 5
+504 22 50 5
+505 23 72 5
+506 24 55 5
+507 25 83 5
+508 21 100 5
+509 24 61 5
+510 19 91 5
+511 18 54 5
+512 19 96 5
+513 21 88 5
+514 19 57 5
+515 21 100 5
+516 23 96 5
+517 19 74 5
+518 18 76 5
+519 20 67 5
+520 21 67 5
+521 20 82 5
+522 18 90 5
+523 18 87 5
+524 21 98 5
+525 25 63 5
+526 21 62 5
+527 20 90 5
+528 24 73 5
+529 22 79 5
+530 23 78 5
+531 20 72 5
+532 23 61 5
+533 21 86 5
+534 19 59 5
+535 20 57 5
+536 18 58 5
+537 20 98 5
+538 22 74 5
+539 20 81 5
+540 18 69 5
+541 24 75 5
+542 23 81 5
+543 20 67 5
+544 20 52 5
+545 24 54 5
+546 18 78 5
+547 23 98 5
+548 19 62 5
+549 22 90 5
+550 25 97 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 11 10
+partition ranges 11 10
+partition ranges 11 10
+partition ranges 11 10
+partition ranges 11 10
+partition ranges 11 10
+partition ranges 11 10
+ calling merge function 9 10 student_data
+reading data of 9
+reading data of block 9 in merge function
+in read data ../data/temp/student_data_Page9
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 10
+reading data of block 10 in merge function
+in read data ../data/temp/student_data_Page10
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 1
+data from 502 18 99
+partition number 1
+data from 523 18 87
+partition number 1
+data from 522 18 90
+partition number 1
+data from 518 18 76
+partition number 1
+data from 536 18 58
+partition number 1
+data from 511 18 54
+partition number 1
+data from 540 18 69
+partition number 1
+data from 546 18 78
+partition number 0
+data from 500 18 51
+partition number 0
+data from 473 18 83
+partition number 0
+data from 462 18 73
+partition number 0
+data from 468 19 88
+partition number 0
+data from 451 19 93
+partition number 0
+data from 479 19 100
+partition number 0
+data from 463 19 53
+partition number 0
+data from 487 19 78
+partition number 0
+data from 458 19 53
+partition number 0
+data from 491 19 86
+partition number 0
+data from 498 19 70
+partition number 1
+data from 510 19 91
+partition number 1
+data from 548 19 62
+partition number 1
+data from 512 19 96
+partition number 1
+data from 514 19 57
+partition number 1
+data from 534 19 59
+partition number 1
+data from 517 19 74
+partition number 1
+data from 527 20 90
+partition number 1
+data from 531 20 72
+partition number 1
+data from 521 20 82
+partition number 1
+data from 519 20 67
+partition number 1
+data from 535 20 57
+partition number 1
+data from 544 20 52
+partition number 1
+data from 543 20 67
+partition number 1
+data from 537 20 98
+partition number 1
+data from 539 20 81
+partition number 0
+data from 486 20 99
+partition number 0
+data from 485 20 85
+partition number 0
+data from 492 20 77
+partition number 0
+data from 481 20 70
+partition number 0
+data from 493 20 90
+partition number 0
+data from 497 20 84
+partition number 0
+data from 476 20 85
+partition number 0
+data from 471 21 82
+partition number 0
+data from 495 21 64
+partition number 0
+data from 474 21 56
+partition number 0
+data from 454 21 54
+partition number 0
+data from 465 21 88
+partition number 0
+data from 478 21 95
+partition number 1
+data from 533 21 86
+partition number 1
+data from 526 21 62
+partition number 1
+data from 508 21 100
+writing page+ 9 50
+ temp writePage
+temp write page successfull
+partition number 1
+data from 524 21 98
+partition number 1
+data from 513 21 88
+partition number 1
+data from 520 21 67
+partition number 1
+data from 515 21 100
+partition number 1
+data from 503 22 75
+partition number 1
+data from 549 22 90
+partition number 1
+data from 538 22 74
+partition number 1
+data from 504 22 50
+partition number 1
+data from 529 22 79
+partition number 0
+data from 453 22 95
+partition number 0
+data from 494 22 78
+partition number 0
+data from 483 22 100
+partition number 0
+data from 464 22 85
+partition number 0
+data from 480 23 53
+partition number 0
+data from 475 23 57
+partition number 0
+data from 467 23 51
+partition number 0
+data from 472 23 57
+partition number 0
+data from 461 23 95
+partition number 0
+data from 455 23 96
+partition number 0
+data from 456 23 86
+partition number 0
+data from 490 23 83
+partition number 1
+data from 516 23 96
+partition number 1
+data from 532 23 61
+partition number 1
+data from 530 23 78
+partition number 1
+data from 547 23 98
+partition number 1
+data from 542 23 81
+partition number 1
+data from 505 23 72
+partition number 1
+data from 509 24 61
+partition number 1
+data from 545 24 54
+partition number 1
+data from 506 24 55
+partition number 1
+data from 541 24 75
+partition number 1
+data from 528 24 73
+partition number 1
+data from 501 24 57
+partition number 0
+data from 496 24 89
+partition number 0
+data from 452 24 68
+partition number 0
+data from 489 24 61
+partition number 0
+data from 477 24 78
+partition number 0
+data from 470 24 86
+partition number 0
+data from 488 25 60
+partition number 0
+data from 457 25 99
+partition number 0
+data from 459 25 51
+partition number 0
+data from 460 25 87
+partition number 0
+data from 484 25 84
+partition number 0
+data from 482 25 77
+partition number 0
+data from 466 25 75
+partition number 0
+data from 499 25 80
+partition number 0
+data from 469 25 59
+partition number 1
+data from 550 25 97
+partition number 1
+data from 507 25 83
+partition number 1
+data from 525 25 63
+writing page+ 10 50
+ temp writePage
+temp write page successfull
+reading data from temp pages../data/temp/temp_student_data_Page9
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page10
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+merge completed
+partition ranges 11 12
+ inside external merge sort 11 12 student_data
+partition size 1
+partition ranges 11 11
+internalSorting 11
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+551 25 62 5
+552 20 75 5
+553 22 91 5
+554 19 72 5
+555 18 63 5
+556 22 89 5
+557 25 100 5
+558 20 57 5
+559 22 76 5
+560 20 70 5
+561 22 78 5
+562 22 62 5
+563 19 78 5
+564 24 57 5
+565 24 68 5
+566 20 91 5
+567 20 81 5
+568 19 67 5
+569 21 55 5
+570 25 66 5
+571 20 66 5
+572 25 54 5
+573 20 64 5
+574 25 90 5
+575 18 64 5
+576 20 83 5
+577 23 93 5
+578 23 83 5
+579 25 65 5
+580 21 61 5
+581 19 82 5
+582 22 54 5
+583 22 61 5
+584 24 65 5
+585 20 95 5
+586 24 84 5
+587 22 75 5
+588 24 73 5
+589 21 97 5
+590 22 89 5
+591 18 52 5
+592 18 91 5
+593 20 86 5
+594 21 79 5
+595 19 58 5
+596 21 91 5
+597 21 88 5
+598 20 51 5
+599 21 94 5
+600 19 66 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 12 12
+internalSorting 12
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+601 21 83 5
+602 20 92 5
+603 23 94 5
+604 19 51 5
+605 20 73 5
+606 23 56 5
+607 19 79 5
+608 20 65 5
+609 21 57 5
+610 20 77 5
+611 25 75 5
+612 25 64 5
+613 21 75 5
+614 19 64 5
+615 23 58 5
+616 18 92 5
+617 20 98 5
+618 21 76 5
+619 25 68 5
+620 21 65 5
+621 23 68 5
+622 21 64 5
+623 24 89 5
+624 25 65 5
+625 23 93 5
+626 24 92 5
+627 23 96 5
+628 20 59 5
+629 20 58 5
+630 25 93 5
+631 22 89 5
+632 19 76 5
+633 20 87 5
+634 21 51 5
+635 24 99 5
+636 25 57 5
+637 25 72 5
+638 23 70 5
+639 20 66 5
+640 25 92 5
+641 22 75 5
+642 22 100 5
+643 21 67 5
+644 20 83 5
+645 20 51 5
+646 19 53 5
+647 23 91 5
+648 19 89 5
+649 21 91 5
+650 19 54 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 13 12
+partition ranges 13 12
+partition ranges 13 12
+partition ranges 13 12
+partition ranges 13 12
+partition ranges 13 12
+partition ranges 13 12
+ calling merge function 11 12 student_data
+reading data of 11
+reading data of block 11 in merge function
+in read data ../data/temp/student_data_Page11
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 12
+reading data of block 12 in merge function
+in read data ../data/temp/student_data_Page12
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 1
+data from 616 18 92
+partition number 0
+data from 555 18 63
+partition number 0
+data from 592 18 91
+partition number 0
+data from 591 18 52
+partition number 0
+data from 575 18 64
+partition number 0
+data from 600 19 66
+partition number 0
+data from 554 19 72
+partition number 0
+data from 595 19 58
+partition number 0
+data from 581 19 82
+partition number 0
+data from 563 19 78
+partition number 0
+data from 568 19 67
+partition number 1
+data from 650 19 54
+partition number 1
+data from 648 19 89
+partition number 1
+data from 604 19 51
+partition number 1
+data from 646 19 53
+partition number 1
+data from 607 19 79
+partition number 1
+data from 632 19 76
+partition number 1
+data from 614 19 64
+partition number 1
+data from 602 20 92
+partition number 1
+data from 645 20 51
+partition number 1
+data from 644 20 83
+partition number 1
+data from 639 20 66
+partition number 1
+data from 633 20 87
+partition number 1
+data from 629 20 58
+partition number 1
+data from 628 20 59
+partition number 1
+data from 617 20 98
+partition number 1
+data from 605 20 73
+partition number 1
+data from 608 20 65
+partition number 1
+data from 610 20 77
+partition number 0
+data from 576 20 83
+partition number 0
+data from 598 20 51
+partition number 0
+data from 593 20 86
+partition number 0
+data from 585 20 95
+partition number 0
+data from 573 20 64
+partition number 0
+data from 571 20 66
+partition number 0
+data from 566 20 91
+partition number 0
+data from 552 20 75
+partition number 0
+data from 558 20 57
+partition number 0
+data from 560 20 70
+partition number 0
+data from 567 20 81
+partition number 0
+data from 599 21 94
+partition number 0
+data from 589 21 97
+partition number 0
+data from 597 21 88
+partition number 0
+data from 569 21 55
+partition number 0
+data from 596 21 91
+partition number 0
+data from 580 21 61
+partition number 0
+data from 594 21 79
+partition number 1
+data from 634 21 51
+partition number 1
+data from 601 21 83
+partition number 1
+data from 649 21 91
+writing page+ 11 50
+ temp writePage
+temp write page successfull
+partition number 1
+data from 643 21 67
+partition number 1
+data from 609 21 57
+partition number 1
+data from 613 21 75
+partition number 1
+data from 618 21 76
+partition number 1
+data from 620 21 65
+partition number 1
+data from 622 21 64
+partition number 1
+data from 631 22 89
+partition number 1
+data from 642 22 100
+partition number 1
+data from 641 22 75
+partition number 0
+data from 590 22 89
+partition number 0
+data from 559 22 76
+partition number 0
+data from 587 22 75
+partition number 0
+data from 556 22 89
+partition number 0
+data from 583 22 61
+partition number 0
+data from 582 22 54
+partition number 0
+data from 561 22 78
+partition number 0
+data from 562 22 62
+partition number 0
+data from 553 22 91
+partition number 0
+data from 578 23 83
+partition number 0
+data from 577 23 93
+partition number 1
+data from 638 23 70
+partition number 1
+data from 603 23 94
+partition number 1
+data from 647 23 91
+partition number 1
+data from 606 23 56
+partition number 1
+data from 621 23 68
+partition number 1
+data from 615 23 58
+partition number 1
+data from 625 23 93
+partition number 1
+data from 627 23 96
+partition number 1
+data from 626 24 92
+partition number 1
+data from 623 24 89
+partition number 1
+data from 635 24 99
+partition number 0
+data from 586 24 84
+partition number 0
+data from 588 24 73
+partition number 0
+data from 565 24 68
+partition number 0
+data from 584 24 65
+partition number 0
+data from 564 24 57
+partition number 0
+data from 557 25 100
+partition number 0
+data from 570 25 66
+partition number 0
+data from 579 25 65
+partition number 0
+data from 551 25 62
+partition number 0
+data from 574 25 90
+partition number 0
+data from 572 25 54
+partition number 1
+data from 637 25 72
+partition number 1
+data from 640 25 92
+partition number 1
+data from 636 25 57
+partition number 1
+data from 624 25 65
+partition number 1
+data from 611 25 75
+partition number 1
+data from 630 25 93
+partition number 1
+data from 612 25 64
+partition number 1
+data from 619 25 68
+writing page+ 12 50
+ temp writePage
+temp write page successfull
+reading data from temp pages../data/temp/temp_student_data_Page11
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page12
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+merge completed
+partition ranges 13 14
+ inside external merge sort 13 14 student_data
+partition size 1
+partition ranges 13 13
+internalSorting 13
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+651 25 62 5
+652 19 77 5
+653 19 56 5
+654 18 53 5
+655 23 91 5
+656 24 59 5
+657 19 98 5
+658 25 90 5
+659 19 91 5
+660 21 72 5
+661 25 85 5
+662 18 70 5
+663 19 79 5
+664 18 65 5
+665 21 86 5
+666 25 50 5
+667 20 50 5
+668 23 92 5
+669 21 97 5
+670 22 51 5
+671 18 50 5
+672 18 70 5
+673 21 77 5
+674 21 75 5
+675 25 54 5
+676 23 80 5
+677 20 54 5
+678 23 53 5
+679 24 82 5
+680 19 78 5
+681 19 58 5
+682 23 69 5
+683 22 50 5
+684 24 71 5
+685 23 99 5
+686 25 89 5
+687 23 64 5
+688 20 63 5
+689 23 91 5
+690 18 50 5
+691 23 87 5
+692 18 63 5
+693 19 56 5
+694 25 100 5
+695 20 59 5
+696 24 64 5
+697 22 99 5
+698 19 81 5
+699 22 94 5
+700 19 65 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 14 14
+internalSorting 14
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+701 20 91 5
+702 24 68 5
+703 19 64 5
+704 23 50 5
+705 21 61 5
+706 24 91 5
+707 24 51 5
+708 19 60 5
+709 25 87 5
+710 23 53 5
+711 21 92 5
+712 22 95 5
+713 22 99 5
+714 25 84 5
+715 19 59 5
+716 18 94 5
+717 22 86 5
+718 24 95 5
+719 20 93 5
+720 20 78 5
+721 22 53 5
+722 25 93 5
+723 21 70 5
+724 22 57 5
+725 22 69 5
+726 19 64 5
+727 20 58 5
+728 19 66 5
+729 21 100 5
+730 18 83 5
+731 24 72 5
+732 25 74 5
+733 21 82 5
+734 18 58 5
+735 24 53 5
+736 23 57 5
+737 20 86 5
+738 25 94 5
+739 24 76 5
+740 20 92 5
+741 19 62 5
+742 25 100 5
+743 18 92 5
+744 19 74 5
+745 19 75 5
+746 20 65 5
+747 23 54 5
+748 20 90 5
+749 23 76 5
+750 22 82 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 15 14
+partition ranges 15 14
+partition ranges 15 14
+partition ranges 15 14
+partition ranges 15 14
+partition ranges 15 14
+partition ranges 15 14
+ calling merge function 13 14 student_data
+reading data of 13
+reading data of block 13 in merge function
+in read data ../data/temp/student_data_Page13
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 14
+reading data of block 14 in merge function
+in read data ../data/temp/student_data_Page14
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 1
+data from 730 18 83
+partition number 1
+data from 743 18 92
+partition number 1
+data from 734 18 58
+partition number 1
+data from 716 18 94
+partition number 0
+data from 654 18 53
+partition number 0
+data from 692 18 63
+partition number 0
+data from 690 18 50
+partition number 0
+data from 672 18 70
+partition number 0
+data from 671 18 50
+partition number 0
+data from 662 18 70
+partition number 0
+data from 664 18 65
+partition number 0
+data from 652 19 77
+partition number 0
+data from 700 19 65
+partition number 0
+data from 698 19 81
+partition number 0
+data from 693 19 56
+partition number 0
+data from 681 19 58
+partition number 0
+data from 680 19 78
+partition number 0
+data from 663 19 79
+partition number 0
+data from 653 19 56
+partition number 0
+data from 659 19 91
+partition number 0
+data from 657 19 98
+partition number 1
+data from 726 19 64
+partition number 1
+data from 703 19 64
+partition number 1
+data from 728 19 66
+partition number 1
+data from 745 19 75
+partition number 1
+data from 708 19 60
+partition number 1
+data from 744 19 74
+partition number 1
+data from 741 19 62
+partition number 1
+data from 715 19 59
+partition number 1
+data from 737 20 86
+partition number 1
+data from 727 20 58
+partition number 1
+data from 720 20 78
+partition number 1
+data from 719 20 93
+partition number 1
+data from 740 20 92
+partition number 1
+data from 746 20 65
+partition number 1
+data from 748 20 90
+partition number 1
+data from 701 20 91
+partition number 0
+data from 688 20 63
+partition number 0
+data from 667 20 50
+partition number 0
+data from 677 20 54
+partition number 0
+data from 695 20 59
+partition number 0
+data from 665 21 86
+partition number 0
+data from 674 21 75
+partition number 0
+data from 673 21 77
+partition number 0
+data from 660 21 72
+partition number 0
+data from 669 21 97
+partition number 1
+data from 733 21 82
+partition number 1
+data from 711 21 92
+partition number 1
+data from 729 21 100
+partition number 1
+data from 723 21 70
+writing page+ 13 50
+ temp writePage
+temp write page successfull
+partition number 1
+data from 705 21 61
+partition number 1
+data from 750 22 82
+partition number 1
+data from 724 22 57
+partition number 1
+data from 725 22 69
+partition number 1
+data from 721 22 53
+partition number 1
+data from 717 22 86
+partition number 1
+data from 712 22 95
+partition number 1
+data from 713 22 99
+partition number 0
+data from 697 22 99
+partition number 0
+data from 670 22 51
+partition number 0
+data from 699 22 94
+partition number 0
+data from 683 22 50
+partition number 0
+data from 655 23 91
+partition number 0
+data from 691 23 87
+partition number 0
+data from 689 23 91
+partition number 0
+data from 682 23 69
+partition number 0
+data from 687 23 64
+partition number 0
+data from 685 23 99
+partition number 0
+data from 678 23 53
+partition number 0
+data from 676 23 80
+partition number 0
+data from 668 23 92
+partition number 1
+data from 749 23 76
+partition number 1
+data from 704 23 50
+partition number 1
+data from 747 23 54
+partition number 1
+data from 736 23 57
+partition number 1
+data from 710 23 53
+partition number 1
+data from 702 24 68
+partition number 1
+data from 706 24 91
+partition number 1
+data from 707 24 51
+partition number 1
+data from 739 24 76
+partition number 1
+data from 735 24 53
+partition number 1
+data from 718 24 95
+partition number 1
+data from 731 24 72
+partition number 0
+data from 684 24 71
+partition number 0
+data from 679 24 82
+partition number 0
+data from 656 24 59
+partition number 0
+data from 696 24 64
+partition number 0
+data from 686 25 89
+partition number 0
+data from 658 25 90
+partition number 0
+data from 694 25 100
+partition number 0
+data from 675 25 54
+partition number 0
+data from 661 25 85
+partition number 0
+data from 666 25 50
+partition number 0
+data from 651 25 62
+partition number 1
+data from 742 25 100
+partition number 1
+data from 738 25 94
+partition number 1
+data from 709 25 87
+partition number 1
+data from 714 25 84
+partition number 1
+data from 732 25 74
+partition number 1
+data from 722 25 93
+writing page+ 14 50
+ temp writePage
+temp write page successfull
+reading data from temp pages../data/temp/temp_student_data_Page13
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page14
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+merge completed
+partition ranges 15 16
+ inside external merge sort 15 16 student_data
+partition size 1
+partition ranges 15 15
+internalSorting 15
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+751 20 68 5
+752 22 79 5
+753 21 76 5
+754 23 98 5
+755 20 81 5
+756 19 74 5
+757 25 100 5
+758 25 74 5
+759 23 70 5
+760 21 74 5
+761 23 85 5
+762 19 53 5
+763 20 61 5
+764 22 67 5
+765 18 92 5
+766 19 55 5
+767 21 75 5
+768 23 97 5
+769 22 100 5
+770 25 78 5
+771 24 97 5
+772 20 62 5
+773 20 88 5
+774 25 77 5
+775 21 61 5
+776 19 68 5
+777 21 81 5
+778 18 65 5
+779 21 65 5
+780 25 78 5
+781 23 54 5
+782 24 71 5
+783 19 93 5
+784 20 52 5
+785 22 97 5
+786 21 98 5
+787 21 59 5
+788 19 74 5
+789 18 67 5
+790 18 59 5
+791 18 72 5
+792 23 53 5
+793 21 82 5
+794 21 61 5
+795 19 78 5
+796 18 73 5
+797 24 65 5
+798 25 79 5
+799 23 98 5
+800 22 98 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 16 16
+internalSorting 16
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+801 21 78 5
+802 25 65 5
+803 23 75 5
+804 21 71 5
+805 21 60 5
+806 18 54 5
+807 18 94 5
+808 19 94 5
+809 22 56 5
+810 21 96 5
+811 24 81 5
+812 25 53 5
+813 25 88 5
+814 25 77 5
+815 24 78 5
+816 20 65 5
+817 25 78 5
+818 19 92 5
+819 19 85 5
+820 24 86 5
+821 23 52 5
+822 18 66 5
+823 20 73 5
+824 24 87 5
+825 22 80 5
+826 24 54 5
+827 23 64 5
+828 19 97 5
+829 20 75 5
+830 19 69 5
+831 24 83 5
+832 22 78 5
+833 20 88 5
+834 22 100 5
+835 19 84 5
+836 19 51 5
+837 20 72 5
+838 21 78 5
+839 18 71 5
+840 21 72 5
+841 19 82 5
+842 25 53 5
+843 23 56 5
+844 24 65 5
+845 20 97 5
+846 25 71 5
+847 22 68 5
+848 24 74 5
+849 23 54 5
+850 25 100 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 17 16
+partition ranges 17 16
+partition ranges 17 16
+partition ranges 17 16
+partition ranges 17 16
+partition ranges 17 16
+partition ranges 17 16
+ calling merge function 15 16 student_data
+reading data of 15
+reading data of block 15 in merge function
+in read data ../data/temp/student_data_Page15
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 16
+reading data of block 16 in merge function
+in read data ../data/temp/student_data_Page16
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 1
+data from 822 18 66
+partition number 1
+data from 839 18 71
+partition number 1
+data from 806 18 54
+partition number 1
+data from 807 18 94
+partition number 0
+data from 778 18 65
+partition number 0
+data from 796 18 73
+partition number 0
+data from 789 18 67
+partition number 0
+data from 765 18 92
+partition number 0
+data from 790 18 59
+partition number 0
+data from 791 18 72
+partition number 0
+data from 766 19 55
+partition number 0
+data from 783 19 93
+partition number 0
+data from 776 19 68
+partition number 0
+data from 788 19 74
+partition number 0
+data from 762 19 53
+partition number 0
+data from 756 19 74
+partition number 0
+data from 795 19 78
+partition number 1
+data from 836 19 51
+partition number 1
+data from 819 19 85
+partition number 1
+data from 818 19 92
+partition number 1
+data from 828 19 97
+partition number 1
+data from 830 19 69
+partition number 1
+data from 835 19 84
+partition number 1
+data from 808 19 94
+partition number 1
+data from 841 19 82
+partition number 1
+data from 837 20 72
+partition number 1
+data from 833 20 88
+partition number 1
+data from 829 20 75
+partition number 1
+data from 816 20 65
+partition number 1
+data from 823 20 73
+partition number 1
+data from 845 20 97
+partition number 0
+data from 772 20 62
+partition number 0
+data from 751 20 68
+partition number 0
+data from 784 20 52
+partition number 0
+data from 755 20 81
+partition number 0
+data from 773 20 88
+partition number 0
+data from 763 20 61
+partition number 0
+data from 767 21 75
+partition number 0
+data from 787 21 59
+partition number 0
+data from 786 21 98
+partition number 0
+data from 760 21 74
+partition number 0
+data from 775 21 61
+partition number 0
+data from 794 21 61
+partition number 0
+data from 777 21 81
+partition number 0
+data from 753 21 76
+partition number 0
+data from 779 21 65
+partition number 0
+data from 793 21 82
+partition number 1
+data from 801 21 78
+partition number 1
+data from 838 21 78
+partition number 1
+data from 840 21 72
+writing page+ 15 50
+ temp writePage
+temp write page successfull
+partition number 1
+data from 804 21 71
+partition number 1
+data from 805 21 60
+partition number 1
+data from 810 21 96
+partition number 1
+data from 825 22 80
+partition number 1
+data from 847 22 68
+partition number 1
+data from 809 22 56
+partition number 1
+data from 832 22 78
+partition number 1
+data from 834 22 100
+partition number 0
+data from 800 22 98
+partition number 0
+data from 785 22 97
+partition number 0
+data from 752 22 79
+partition number 0
+data from 769 22 100
+partition number 0
+data from 764 22 67
+partition number 0
+data from 761 23 85
+partition number 0
+data from 799 23 98
+partition number 0
+data from 754 23 98
+partition number 0
+data from 759 23 70
+partition number 0
+data from 792 23 53
+partition number 0
+data from 768 23 97
+partition number 0
+data from 781 23 54
+partition number 1
+data from 843 23 56
+partition number 1
+data from 803 23 75
+partition number 1
+data from 827 23 64
+partition number 1
+data from 821 23 52
+partition number 1
+data from 849 23 54
+partition number 1
+data from 848 24 74
+partition number 1
+data from 844 24 65
+partition number 1
+data from 811 24 81
+partition number 1
+data from 831 24 83
+partition number 1
+data from 815 24 78
+partition number 1
+data from 826 24 54
+partition number 1
+data from 824 24 87
+partition number 1
+data from 820 24 86
+partition number 0
+data from 782 24 71
+partition number 0
+data from 771 24 97
+partition number 0
+data from 797 24 65
+partition number 0
+data from 770 25 78
+partition number 0
+data from 758 25 74
+partition number 0
+data from 757 25 100
+partition number 0
+data from 774 25 77
+partition number 0
+data from 798 25 79
+partition number 0
+data from 780 25 78
+partition number 1
+data from 846 25 71
+partition number 1
+data from 850 25 100
+partition number 1
+data from 842 25 53
+partition number 1
+data from 817 25 78
+partition number 1
+data from 814 25 77
+partition number 1
+data from 813 25 88
+partition number 1
+data from 812 25 53
+partition number 1
+data from 802 25 65
+writing page+ 16 50
+ temp writePage
+temp write page successfull
+reading data from temp pages../data/temp/temp_student_data_Page15
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page16
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+merge completed
+partition ranges 17 18
+ inside external merge sort 17 18 student_data
+partition size 1
+partition ranges 17 17
+internalSorting 17
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+851 22 59 5
+852 25 78 5
+853 22 66 5
+854 23 96 5
+855 22 68 5
+856 19 90 5
+857 23 69 5
+858 25 85 5
+859 21 55 5
+860 25 77 5
+861 20 64 5
+862 20 59 5
+863 21 52 5
+864 22 97 5
+865 18 97 5
+866 25 80 5
+867 19 89 5
+868 20 66 5
+869 24 51 5
+870 18 96 5
+871 21 86 5
+872 20 96 5
+873 18 83 5
+874 23 59 5
+875 23 84 5
+876 21 60 5
+877 20 57 5
+878 21 57 5
+879 25 88 5
+880 25 85 5
+881 24 76 5
+882 19 63 5
+883 20 87 5
+884 18 88 5
+885 21 72 5
+886 24 84 5
+887 18 58 5
+888 21 67 5
+889 24 71 5
+890 25 88 5
+891 22 77 5
+892 25 53 5
+893 21 51 5
+894 23 74 5
+895 20 70 5
+896 25 60 5
+897 19 96 5
+898 24 64 5
+899 24 71 5
+900 23 74 5
+data read success
+data size 50
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 18 18
+internalSorting 18
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 10
+901 25 64 5
+902 23 76 5
+903 18 100 5
+904 19 75 5
+905 20 66 5
+906 22 72 5
+907 25 81 5
+908 24 84 5
+909 23 91 5
+910 21 81 5
+data read success
+data size 10
+custom sorting is done
+BufferManager::writePage
+Page::Page
+Page::writePage
+internally sorted data written back
+partition ranges 19 18
+partition ranges 19 18
+partition ranges 19 18
+partition ranges 19 18
+partition ranges 19 18
+partition ranges 19 18
+partition ranges 19 18
+ calling merge function 17 18 student_data
+reading data of 17
+reading data of block 17 in merge function
+in read data ../data/temp/student_data_Page17
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 18
+reading data of block 18 in merge function
+in read data ../data/temp/student_data_Page18
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 10
+partition number 1
+data from 903 18 100
+partition number 0
+data from 884 18 88
+partition number 0
+data from 870 18 96
+partition number 0
+data from 887 18 58
+partition number 0
+data from 873 18 83
+partition number 0
+data from 865 18 97
+partition number 0
+data from 882 19 63
+partition number 0
+data from 867 19 89
+partition number 0
+data from 897 19 96
+partition number 0
+data from 856 19 90
+partition number 1
+data from 904 19 75
+partition number 1
+data from 905 20 66
+partition number 0
+data from 868 20 66
+partition number 0
+data from 877 20 57
+partition number 0
+data from 862 20 59
+partition number 0
+data from 861 20 64
+partition number 0
+data from 872 20 96
+partition number 0
+data from 895 20 70
+partition number 0
+data from 883 20 87
+partition number 0
+data from 871 21 86
+partition number 0
+data from 885 21 72
+partition number 0
+data from 888 21 67
+partition number 0
+data from 876 21 60
+partition number 0
+data from 863 21 52
+partition number 0
+data from 893 21 51
+partition number 0
+data from 859 21 55
+partition number 0
+data from 878 21 57
+partition number 1
+data from 910 21 81
+partition number 1
+data from 906 22 72
+partition number 0
+data from 891 22 77
+partition number 0
+data from 864 22 97
+partition number 0
+data from 855 22 68
+partition number 0
+data from 853 22 66
+partition number 0
+data from 851 22 59
+partition number 0
+data from 900 23 74
+partition number 0
+data from 894 23 74
+partition number 0
+data from 875 23 84
+partition number 0
+data from 874 23 59
+partition number 0
+data from 854 23 96
+partition number 0
+data from 857 23 69
+partition number 1
+data from 902 23 76
+partition number 1
+data from 909 23 91
+partition number 1
+data from 908 24 84
+partition number 0
+data from 899 24 71
+partition number 0
+data from 886 24 84
+partition number 0
+data from 869 24 51
+partition number 0
+data from 889 24 71
+partition number 0
+data from 898 24 64
+partition number 0
+data from 881 24 76
+partition number 0
+data from 866 25 80
+writing page+ 17 50
+ temp writePage
+temp write page successfull
+partition number 0
+data from 852 25 78
+partition number 0
+data from 896 25 60
+partition number 0
+data from 858 25 85
+partition number 0
+data from 860 25 77
+partition number 0
+data from 892 25 53
+partition number 0
+data from 890 25 88
+partition number 0
+data from 879 25 88
+partition number 0
+data from 880 25 85
+partition number 1
+data from 901 25 64
+partition number 1
+data from 907 25 81
+writing page+ 18 10
+ temp writePage
+temp write page successfull
+reading data from temp pages../data/temp/temp_student_data_Page17
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page18
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+merge completed
+ calling merge function 0 18 student_data
+reading data of 0
+reading data of block 0 in merge function
+in read data ../data/temp/student_data_Page0
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 3
+reading data of block 3 in merge function
+in read data ../data/temp/student_data_Page3
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 5
+reading data of block 5 in merge function
+in read data ../data/temp/student_data_Page5
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 7
+reading data of block 7 in merge function
+in read data ../data/temp/student_data_Page7
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 9
+reading data of block 9 in merge function
+in read data ../data/temp/student_data_Page9
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 11
+reading data of block 11 in merge function
+in read data ../data/temp/student_data_Page11
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 13
+reading data of block 13 in merge function
+in read data ../data/temp/student_data_Page13
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 15
+reading data of block 15 in merge function
+in read data ../data/temp/student_data_Page15
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+reading data of 17
+reading data of block 17 in merge function
+in read data ../data/temp/student_data_Page17
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 8
+data from 903 18 100
+partition number 8
+data from 884 18 88
+partition number 8
+data from 870 18 96
+partition number 8
+data from 887 18 58
+partition number 8
+data from 873 18 83
+partition number 8
+data from 865 18 97
+partition number 7
+data from 822 18 66
+partition number 7
+data from 839 18 71
+partition number 7
+data from 806 18 54
+partition number 7
+data from 807 18 94
+partition number 7
+data from 778 18 65
+partition number 7
+data from 796 18 73
+partition number 7
+data from 789 18 67
+partition number 7
+data from 765 18 92
+partition number 7
+data from 790 18 59
+partition number 7
+data from 791 18 72
+partition number 6
+data from 730 18 83
+partition number 6
+data from 743 18 92
+partition number 6
+data from 734 18 58
+partition number 6
+data from 716 18 94
+partition number 6
+data from 654 18 53
+partition number 6
+data from 692 18 63
+partition number 6
+data from 690 18 50
+partition number 6
+data from 672 18 70
+partition number 6
+data from 671 18 50
+partition number 6
+data from 662 18 70
+partition number 6
+data from 664 18 65
+partition number 3
+data from 424 18 50
+partition number 3
+data from 434 18 76
+partition number 3
+data from 450 18 79
+partition number 3
+data from 449 18 50
+partition number 3
+data from 448 18 91
+partition number 3
+data from 439 18 68
+partition number 3
+data from 411 18 62
+partition number 3
+data from 352 18 96
+partition number 3
+data from 374 18 65
+partition number 3
+data from 371 18 84
+partition number 3
+data from 368 18 79
+partition number 3
+data from 366 18 82
+partition number 3
+data from 365 18 96
+partition number 3
+data from 390 18 57
+partition number 3
+data from 392 18 80
+partition number 3
+data from 395 18 76
+partition number 3
+data from 358 18 53
+partition number 3
+data from 353 18 84
+partition number 0
+data from 148 18 80
+partition number 0
+data from 136 18 87
+partition number 0
+data from 107 18 95
+partition number 0
+data from 119 18 70
+partition number 0
+data from 116 18 82
+writing page+ 0 50
+ temp writePage
+temp write page successfull
+partition number 0
+data from 97 18 60
+partition number 0
+data from 91 18 53
+partition number 0
+data from 88 18 94
+partition number 0
+data from 66 18 63
+partition number 0
+data from 84 18 80
+partition number 0
+data from 65 18 65
+partition number 0
+data from 5 18 93
+partition number 0
+data from 6 18 84
+partition number 0
+data from 40 18 84
+partition number 0
+data from 12 18 91
+partition number 2
+data from 302 18 82
+partition number 2
+data from 333 18 73
+partition number 2
+data from 324 18 79
+partition number 2
+data from 342 18 94
+partition number 2
+data from 319 18 65
+partition number 2
+data from 306 18 76
+partition number 2
+data from 305 18 82
+partition number 2
+data from 274 18 78
+partition number 2
+data from 282 18 95
+partition number 2
+data from 299 18 100
+partition number 2
+data from 265 18 87
+partition number 2
+data from 285 18 89
+partition number 2
+data from 287 18 100
+partition number 2
+data from 258 18 57
+partition number 5
+data from 616 18 92
+partition number 5
+data from 555 18 63
+partition number 5
+data from 592 18 91
+partition number 5
+data from 591 18 52
+partition number 5
+data from 575 18 64
+partition number 1
+data from 240 18 64
+partition number 1
+data from 249 18 80
+partition number 1
+data from 239 18 71
+partition number 1
+data from 210 18 98
+partition number 1
+data from 235 18 80
+partition number 1
+data from 218 18 51
+partition number 1
+data from 199 18 52
+partition number 1
+data from 162 18 54
+partition number 1
+data from 192 18 71
+partition number 1
+data from 160 18 56
+partition number 4
+data from 502 18 99
+partition number 4
+data from 523 18 87
+partition number 4
+data from 522 18 90
+partition number 4
+data from 518 18 76
+partition number 4
+data from 536 18 58
+partition number 4
+data from 511 18 54
+partition number 4
+data from 540 18 69
+partition number 4
+data from 546 18 78
+partition number 4
+data from 500 18 51
+partition number 4
+data from 473 18 83
+partition number 4
+data from 462 18 73
+writing page+ 1 50
+ temp writePage
+temp write page successfull
+partition number 4
+data from 468 19 88
+partition number 4
+data from 451 19 93
+partition number 4
+data from 479 19 100
+partition number 4
+data from 463 19 53
+partition number 4
+data from 487 19 78
+partition number 4
+data from 458 19 53
+partition number 4
+data from 491 19 86
+partition number 4
+data from 498 19 70
+partition number 4
+data from 510 19 91
+partition number 4
+data from 548 19 62
+partition number 4
+data from 512 19 96
+partition number 4
+data from 514 19 57
+partition number 4
+data from 534 19 59
+partition number 4
+data from 517 19 74
+partition number 5
+data from 600 19 66
+partition number 5
+data from 554 19 72
+partition number 5
+data from 595 19 58
+partition number 5
+data from 581 19 82
+partition number 5
+data from 563 19 78
+partition number 5
+data from 568 19 67
+partition number 5
+data from 650 19 54
+partition number 5
+data from 648 19 89
+partition number 5
+data from 604 19 51
+partition number 5
+data from 646 19 53
+partition number 5
+data from 607 19 79
+partition number 5
+data from 632 19 76
+partition number 5
+data from 614 19 64
+partition number 1
+data from 200 19 63
+partition number 1
+data from 166 19 70
+partition number 1
+data from 165 19 94
+partition number 1
+data from 164 19 60
+partition number 1
+data from 151 19 68
+partition number 1
+data from 180 19 70
+partition number 1
+data from 159 19 98
+partition number 1
+data from 193 19 66
+partition number 1
+data from 155 19 59
+partition number 1
+data from 153 19 72
+partition number 1
+data from 245 19 50
+partition number 1
+data from 204 19 73
+partition number 1
+data from 209 19 59
+partition number 1
+data from 236 19 50
+partition number 1
+data from 231 19 51
+partition number 1
+data from 215 19 69
+partition number 1
+data from 247 19 69
+partition number 2
+data from 267 19 92
+partition number 2
+data from 261 19 53
+partition number 2
+data from 260 19 91
+partition number 2
+data from 257 19 68
+partition number 2
+data from 298 19 52
+partition number 2
+data from 253 19 63
+writing page+ 2 50
+ temp writePage
+temp write page successfull
+partition number 2
+data from 325 19 81
+partition number 2
+data from 343 19 92
+partition number 2
+data from 344 19 91
+partition number 2
+data from 317 19 73
+partition number 2
+data from 337 19 89
+partition number 2
+data from 328 19 63
+partition number 2
+data from 331 19 55
+partition number 2
+data from 311 19 81
+partition number 2
+data from 335 19 91
+partition number 8
+data from 882 19 63
+partition number 8
+data from 867 19 89
+partition number 8
+data from 897 19 96
+partition number 8
+data from 856 19 90
+partition number 8
+data from 904 19 75
+partition number 7
+data from 766 19 55
+partition number 7
+data from 783 19 93
+partition number 7
+data from 776 19 68
+partition number 7
+data from 788 19 74
+partition number 7
+data from 762 19 53
+partition number 7
+data from 756 19 74
+partition number 7
+data from 795 19 78
+partition number 7
+data from 836 19 51
+partition number 7
+data from 819 19 85
+partition number 7
+data from 818 19 92
+partition number 7
+data from 828 19 97
+partition number 7
+data from 830 19 69
+partition number 7
+data from 835 19 84
+partition number 7
+data from 808 19 94
+partition number 7
+data from 841 19 82
+partition number 6
+data from 652 19 77
+partition number 6
+data from 700 19 65
+partition number 6
+data from 698 19 81
+partition number 6
+data from 693 19 56
+partition number 6
+data from 681 19 58
+partition number 6
+data from 680 19 78
+partition number 6
+data from 663 19 79
+partition number 6
+data from 653 19 56
+partition number 6
+data from 659 19 91
+partition number 6
+data from 657 19 98
+partition number 6
+data from 726 19 64
+partition number 6
+data from 703 19 64
+partition number 6
+data from 728 19 66
+partition number 6
+data from 745 19 75
+partition number 6
+data from 708 19 60
+partition number 6
+data from 744 19 74
+partition number 6
+data from 741 19 62
+partition number 6
+data from 715 19 59
+partition number 3
+data from 380 19 96
+partition number 3
+data from 351 19 67
+partition number 3
+data from 356 19 100
+writing page+ 3 50
+ temp writePage
+temp write page successfull
+partition number 3
+data from 355 19 97
+partition number 3
+data from 367 19 99
+partition number 3
+data from 399 19 77
+partition number 3
+data from 373 19 85
+partition number 3
+data from 372 19 88
+partition number 3
+data from 404 19 68
+partition number 3
+data from 440 19 97
+partition number 3
+data from 443 19 90
+partition number 3
+data from 418 19 85
+partition number 0
+data from 24 19 74
+partition number 0
+data from 31 19 96
+partition number 0
+data from 37 19 96
+partition number 0
+data from 39 19 68
+partition number 0
+data from 42 19 78
+partition number 0
+data from 48 19 84
+partition number 0
+data from 50 19 100
+partition number 0
+data from 73 19 86
+partition number 0
+data from 55 19 88
+partition number 0
+data from 75 19 93
+partition number 0
+data from 92 19 98
+partition number 0
+data from 61 19 66
+partition number 0
+data from 76 19 73
+partition number 0
+data from 149 19 51
+partition number 0
+data from 128 19 63
+partition number 0
+data from 125 19 60
+partition number 0
+data from 137 19 72
+partition number 0
+data from 146 19 79
+partition number 0
+data from 143 20 92
+partition number 0
+data from 129 20 58
+partition number 0
+data from 132 20 84
+partition number 0
+data from 126 20 53
+partition number 0
+data from 120 20 58
+partition number 0
+data from 109 20 55
+partition number 0
+data from 115 20 83
+partition number 0
+data from 142 20 78
+partition number 0
+data from 144 20 96
+partition number 0
+data from 85 20 71
+partition number 0
+data from 69 20 76
+partition number 0
+data from 80 20 68
+partition number 0
+data from 94 20 96
+partition number 0
+data from 44 20 72
+partition number 0
+data from 16 20 62
+partition number 0
+data from 19 20 73
+partition number 0
+data from 20 20 99
+reading data of 1
+reading data of block 1 in merge function
+in read data ../data/temp/student_data_Page1
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 8
+data from 905 20 66
+partition number 8
+data from 868 20 66
+partition number 8
+data from 877 20 57
+partition number 8
+data from 862 20 59
+partition number 8
+data from 861 20 64
+partition number 8
+data from 872 20 96
+writing page+ 4 50
+ temp writePage
+temp write page successfull
+partition number 8
+data from 895 20 70
+partition number 8
+data from 883 20 87
+partition number 4
+data from 527 20 90
+partition number 4
+data from 531 20 72
+partition number 4
+data from 521 20 82
+partition number 4
+data from 519 20 67
+partition number 4
+data from 535 20 57
+partition number 4
+data from 544 20 52
+partition number 4
+data from 543 20 67
+partition number 4
+data from 537 20 98
+partition number 4
+data from 539 20 81
+partition number 4
+data from 486 20 99
+partition number 4
+data from 485 20 85
+partition number 4
+data from 492 20 77
+partition number 4
+data from 481 20 70
+partition number 4
+data from 493 20 90
+partition number 4
+data from 497 20 84
+partition number 4
+data from 476 20 85
+partition number 6
+data from 737 20 86
+partition number 6
+data from 727 20 58
+partition number 6
+data from 720 20 78
+partition number 6
+data from 719 20 93
+partition number 6
+data from 740 20 92
+partition number 6
+data from 746 20 65
+partition number 6
+data from 748 20 90
+partition number 6
+data from 701 20 91
+partition number 6
+data from 688 20 63
+partition number 6
+data from 667 20 50
+partition number 6
+data from 677 20 54
+partition number 6
+data from 695 20 59
+partition number 3
+data from 446 20 78
+partition number 3
+data from 445 20 81
+partition number 3
+data from 379 20 51
+partition number 3
+data from 388 20 65
+partition number 3
+data from 396 20 96
+partition number 5
+data from 602 20 92
+partition number 5
+data from 645 20 51
+partition number 5
+data from 644 20 83
+partition number 5
+data from 639 20 66
+partition number 5
+data from 633 20 87
+partition number 5
+data from 629 20 58
+partition number 5
+data from 628 20 59
+partition number 5
+data from 617 20 98
+partition number 5
+data from 605 20 73
+partition number 5
+data from 608 20 65
+partition number 5
+data from 610 20 77
+partition number 5
+data from 576 20 83
+partition number 5
+data from 598 20 51
+partition number 5
+data from 593 20 86
+partition number 5
+data from 585 20 95
+writing page+ 5 50
+ temp writePage
+temp write page successfull
+partition number 5
+data from 573 20 64
+partition number 5
+data from 571 20 66
+partition number 5
+data from 566 20 91
+partition number 5
+data from 552 20 75
+partition number 5
+data from 558 20 57
+partition number 5
+data from 560 20 70
+partition number 5
+data from 567 20 81
+partition number 7
+data from 837 20 72
+partition number 7
+data from 833 20 88
+partition number 7
+data from 829 20 75
+partition number 7
+data from 816 20 65
+partition number 7
+data from 823 20 73
+partition number 7
+data from 845 20 97
+partition number 7
+data from 772 20 62
+partition number 7
+data from 751 20 68
+partition number 7
+data from 784 20 52
+partition number 7
+data from 755 20 81
+partition number 7
+data from 773 20 88
+partition number 7
+data from 763 20 61
+partition number 2
+data from 329 20 85
+partition number 2
+data from 347 20 78
+partition number 2
+data from 348 20 86
+partition number 2
+data from 320 20 53
+partition number 2
+data from 301 20 55
+partition number 2
+data from 304 20 52
+partition number 2
+data from 339 20 63
+partition number 2
+data from 303 20 91
+partition number 2
+data from 270 20 76
+partition number 2
+data from 281 20 88
+partition number 2
+data from 280 20 77
+partition number 2
+data from 288 20 97
+partition number 2
+data from 266 20 70
+partition number 2
+data from 259 20 62
+partition number 2
+data from 290 20 72
+partition number 2
+data from 252 20 53
+partition number 1
+data from 201 20 50
+partition number 1
+data from 228 20 65
+partition number 1
+data from 229 20 68
+partition number 1
+data from 238 20 78
+partition number 1
+data from 205 20 78
+partition number 1
+data from 195 20 55
+partition number 1
+data from 176 20 88
+partition number 1
+data from 171 20 56
+partition number 1
+data from 152 20 75
+partition number 1
+data from 154 20 91
+partition number 1
+data from 184 21 67
+partition number 1
+data from 198 21 53
+partition number 1
+data from 181 21 76
+partition number 1
+data from 161 21 84
+partition number 1
+data from 178 21 79
+writing page+ 6 50
+ temp writePage
+temp write page successfull
+partition number 1
+data from 163 21 80
+partition number 1
+data from 169 21 91
+partition number 1
+data from 172 21 66
+partition number 1
+data from 230 21 51
+partition number 1
+data from 243 21 88
+partition number 1
+data from 227 21 73
+partition number 1
+data from 241 21 77
+partition number 1
+data from 246 21 70
+reading data of 4
+reading data of block 4 in merge function
+in read data ../data/temp/student_data_Page4
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 1
+data from 219 21 72
+partition number 1
+data from 216 21 87
+partition number 1
+data from 207 21 55
+partition number 1
+data from 212 21 79
+partition number 2
+data from 300 21 54
+partition number 2
+data from 262 21 87
+partition number 2
+data from 307 21 63
+partition number 2
+data from 314 21 55
+partition number 2
+data from 313 21 83
+reading data of 6
+reading data of block 6 in merge function
+in read data ../data/temp/student_data_Page6
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 0
+data from 41 21 65
+partition number 0
+data from 7 21 51
+partition number 0
+data from 45 21 93
+partition number 0
+data from 38 21 86
+partition number 0
+data from 34 21 82
+partition number 0
+data from 33 21 63
+partition number 0
+data from 72 21 74
+partition number 0
+data from 52 21 79
+partition number 0
+data from 74 21 60
+partition number 0
+data from 98 21 80
+partition number 0
+data from 99 21 78
+partition number 0
+data from 68 21 57
+partition number 0
+data from 51 21 76
+partition number 0
+data from 60 21 78
+partition number 0
+data from 147 21 60
+partition number 0
+data from 104 21 56
+partition number 0
+data from 113 21 55
+partition number 4
+data from 471 21 82
+partition number 4
+data from 495 21 64
+partition number 4
+data from 474 21 56
+partition number 4
+data from 454 21 54
+partition number 4
+data from 465 21 88
+partition number 4
+data from 478 21 95
+partition number 4
+data from 533 21 86
+partition number 4
+data from 526 21 62
+partition number 4
+data from 508 21 100
+reading data of 10
+reading data of block 10 in merge function
+in read data ../data/temp/student_data_Page10
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 4
+data from 524 21 98
+partition number 4
+data from 513 21 88
+partition number 4
+data from 520 21 67
+partition number 4
+data from 515 21 100
+partition number 7
+data from 767 21 75
+partition number 7
+data from 787 21 59
+partition number 7
+data from 786 21 98
+writing page+ 7 50
+ temp writePage
+temp write page successfull
+partition number 7
+data from 760 21 74
+partition number 7
+data from 775 21 61
+partition number 7
+data from 794 21 61
+partition number 7
+data from 777 21 81
+partition number 7
+data from 753 21 76
+partition number 7
+data from 779 21 65
+partition number 7
+data from 793 21 82
+partition number 7
+data from 801 21 78
+partition number 7
+data from 838 21 78
+partition number 7
+data from 840 21 72
+reading data of 16
+reading data of block 16 in merge function
+in read data ../data/temp/student_data_Page16
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 7
+data from 804 21 71
+partition number 7
+data from 805 21 60
+partition number 7
+data from 810 21 96
+partition number 8
+data from 871 21 86
+partition number 8
+data from 885 21 72
+partition number 8
+data from 888 21 67
+partition number 8
+data from 876 21 60
+partition number 8
+data from 863 21 52
+partition number 8
+data from 893 21 51
+partition number 8
+data from 859 21 55
+partition number 8
+data from 878 21 57
+partition number 8
+data from 910 21 81
+partition number 5
+data from 599 21 94
+partition number 5
+data from 589 21 97
+partition number 5
+data from 597 21 88
+partition number 5
+data from 569 21 55
+partition number 5
+data from 596 21 91
+partition number 5
+data from 580 21 61
+partition number 5
+data from 594 21 79
+partition number 5
+data from 634 21 51
+partition number 5
+data from 601 21 83
+partition number 5
+data from 649 21 91
+reading data of 12
+reading data of block 12 in merge function
+in read data ../data/temp/student_data_Page12
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 5
+data from 643 21 67
+partition number 5
+data from 609 21 57
+partition number 5
+data from 613 21 75
+partition number 5
+data from 618 21 76
+partition number 5
+data from 620 21 65
+partition number 5
+data from 622 21 64
+partition number 6
+data from 665 21 86
+partition number 6
+data from 674 21 75
+partition number 6
+data from 673 21 77
+partition number 6
+data from 660 21 72
+partition number 6
+data from 669 21 97
+partition number 6
+data from 733 21 82
+partition number 6
+data from 711 21 92
+partition number 6
+data from 729 21 100
+partition number 6
+data from 723 21 70
+reading data of 14
+reading data of block 14 in merge function
+in read data ../data/temp/student_data_Page14
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 6
+data from 705 21 61
+partition number 3
+data from 370 21 52
+partition number 3
+data from 369 21 82
+writing page+ 8 50
+ temp writePage
+temp write page successfull
+partition number 3
+data from 389 21 100
+partition number 3
+data from 359 21 54
+partition number 3
+data from 413 21 96
+partition number 3
+data from 422 21 74
+partition number 3
+data from 437 21 89
+partition number 3
+data from 441 21 55
+partition number 3
+data from 410 21 54
+partition number 3
+data from 447 21 56
+partition number 3
+data from 406 21 54
+partition number 3
+data from 403 21 70
+partition number 3
+data from 401 21 61
+partition number 3
+data from 442 22 50
+partition number 3
+data from 402 22 64
+reading data of 8
+reading data of block 8 in merge function
+in read data ../data/temp/student_data_Page8
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 3
+data from 409 22 57
+partition number 3
+data from 414 22 57
+partition number 3
+data from 415 22 78
+partition number 3
+data from 420 22 97
+partition number 3
+data from 423 22 56
+partition number 3
+data from 376 22 52
+partition number 3
+data from 391 22 88
+partition number 3
+data from 378 22 98
+partition number 3
+data from 357 22 59
+partition number 6
+data from 750 22 82
+partition number 6
+data from 724 22 57
+partition number 6
+data from 725 22 69
+partition number 6
+data from 721 22 53
+partition number 6
+data from 717 22 86
+partition number 6
+data from 712 22 95
+partition number 6
+data from 713 22 99
+partition number 6
+data from 697 22 99
+partition number 6
+data from 670 22 51
+partition number 6
+data from 699 22 94
+partition number 6
+data from 683 22 50
+partition number 1
+data from 225 22 66
+partition number 1
+data from 244 22 50
+partition number 1
+data from 203 22 77
+partition number 1
+data from 220 22 96
+partition number 1
+data from 214 22 74
+partition number 1
+data from 232 22 52
+partition number 1
+data from 248 22 58
+partition number 1
+data from 211 22 59
+partition number 1
+data from 188 22 53
+partition number 1
+data from 170 22 77
+partition number 1
+data from 194 22 58
+partition number 1
+data from 185 22 57
+partition number 7
+data from 825 22 80
+partition number 7
+data from 847 22 68
+partition number 7
+data from 809 22 56
+partition number 7
+data from 832 22 78
+partition number 7
+data from 834 22 100
+writing page+ 9 50
+ temp writePage
+temp write page successfull
+partition number 7
+data from 800 22 98
+partition number 7
+data from 785 22 97
+partition number 7
+data from 752 22 79
+partition number 7
+data from 769 22 100
+partition number 7
+data from 764 22 67
+partition number 5
+data from 631 22 89
+partition number 5
+data from 642 22 100
+partition number 5
+data from 641 22 75
+partition number 5
+data from 590 22 89
+partition number 5
+data from 559 22 76
+partition number 5
+data from 587 22 75
+partition number 5
+data from 556 22 89
+partition number 5
+data from 583 22 61
+partition number 5
+data from 582 22 54
+partition number 5
+data from 561 22 78
+partition number 5
+data from 562 22 62
+partition number 5
+data from 553 22 91
+partition number 2
+data from 338 22 83
+partition number 2
+data from 345 22 65
+partition number 2
+data from 346 22 98
+partition number 2
+data from 336 22 60
+partition number 2
+data from 349 22 94
+partition number 2
+data from 350 22 51
+partition number 2
+data from 322 22 50
+partition number 2
+data from 308 22 85
+partition number 2
+data from 309 22 77
+partition number 2
+data from 310 22 56
+partition number 2
+data from 315 22 90
+partition number 2
+data from 316 22 55
+partition number 2
+data from 323 22 93
+partition number 2
+data from 326 22 87
+partition number 2
+data from 332 22 62
+partition number 2
+data from 255 22 81
+partition number 2
+data from 276 22 78
+partition number 2
+data from 297 22 95
+partition number 2
+data from 284 22 91
+partition number 2
+data from 264 22 79
+partition number 8
+data from 906 22 72
+partition number 8
+data from 891 22 77
+partition number 8
+data from 864 22 97
+partition number 8
+data from 855 22 68
+partition number 8
+data from 853 22 66
+partition number 8
+data from 851 22 59
+partition number 0
+data from 117 22 54
+partition number 0
+data from 140 22 71
+partition number 0
+data from 106 22 50
+partition number 0
+data from 130 22 63
+partition number 0
+data from 57 22 59
+partition number 0
+data from 67 22 58
+partition number 0
+data from 64 22 94
+writing page+ 10 50
+ temp writePage
+temp write page successfull
+partition number 0
+data from 58 22 90
+partition number 0
+data from 79 22 83
+partition number 0
+data from 86 22 79
+partition number 0
+data from 43 22 77
+partition number 0
+data from 25 22 92
+partition number 0
+data from 26 22 81
+partition number 0
+data from 22 22 89
+partition number 0
+data from 21 22 52
+partition number 0
+data from 18 22 83
+partition number 0
+data from 9 22 80
+partition number 4
+data from 503 22 75
+partition number 4
+data from 549 22 90
+partition number 4
+data from 538 22 74
+partition number 4
+data from 504 22 50
+partition number 4
+data from 529 22 79
+partition number 4
+data from 453 22 95
+partition number 4
+data from 494 22 78
+partition number 4
+data from 483 22 100
+partition number 4
+data from 464 22 85
+partition number 4
+data from 480 23 53
+partition number 4
+data from 475 23 57
+partition number 4
+data from 467 23 51
+partition number 4
+data from 472 23 57
+partition number 4
+data from 461 23 95
+partition number 4
+data from 455 23 96
+partition number 4
+data from 456 23 86
+partition number 4
+data from 490 23 83
+partition number 4
+data from 516 23 96
+partition number 4
+data from 532 23 61
+partition number 4
+data from 530 23 78
+partition number 4
+data from 547 23 98
+partition number 4
+data from 542 23 81
+partition number 4
+data from 505 23 72
+partition number 8
+data from 900 23 74
+partition number 8
+data from 894 23 74
+partition number 8
+data from 875 23 84
+partition number 8
+data from 874 23 59
+partition number 8
+data from 854 23 96
+partition number 8
+data from 857 23 69
+partition number 8
+data from 902 23 76
+partition number 8
+data from 909 23 91
+partition number 3
+data from 354 23 55
+partition number 3
+data from 398 23 83
+partition number 3
+data from 385 23 62
+partition number 3
+data from 375 23 67
+partition number 3
+data from 397 23 83
+partition number 3
+data from 393 23 62
+partition number 3
+data from 426 23 94
+partition number 3
+data from 407 23 53
+partition number 3
+data from 408 23 55
+writing page+ 11 50
+ temp writePage
+temp write page successfull
+partition number 3
+data from 438 23 80
+partition number 3
+data from 425 23 77
+partition number 3
+data from 431 23 51
+partition number 3
+data from 430 23 82
+partition number 7
+data from 761 23 85
+partition number 7
+data from 799 23 98
+partition number 7
+data from 754 23 98
+partition number 7
+data from 759 23 70
+partition number 7
+data from 792 23 53
+partition number 7
+data from 768 23 97
+partition number 7
+data from 781 23 54
+partition number 7
+data from 843 23 56
+partition number 7
+data from 803 23 75
+partition number 7
+data from 827 23 64
+partition number 7
+data from 821 23 52
+partition number 7
+data from 849 23 54
+partition number 0
+data from 3 23 83
+partition number 0
+data from 29 23 54
+partition number 0
+data from 10 23 85
+partition number 0
+data from 17 23 63
+partition number 0
+data from 15 23 70
+partition number 0
+data from 14 23 80
+partition number 0
+data from 82 23 97
+partition number 0
+data from 90 23 60
+partition number 0
+data from 89 23 94
+partition number 0
+data from 59 23 98
+partition number 0
+data from 53 23 72
+partition number 0
+data from 62 23 76
+partition number 0
+data from 63 23 68
+partition number 0
+data from 78 23 78
+partition number 0
+data from 95 23 100
+partition number 0
+data from 141 23 62
+reading data of 2
+reading data of block 2 in merge function
+in read data ../data/temp/student_data_Page2
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 50
+partition number 0
+data from 138 23 66
+partition number 0
+data from 135 23 82
+partition number 0
+data from 150 23 56
+partition number 0
+data from 127 23 76
+partition number 0
+data from 102 23 59
+partition number 0
+data from 103 23 58
+partition number 0
+data from 114 23 88
+partition number 0
+data from 121 23 52
+partition number 0
+data from 122 23 53
+partition number 0
+data from 124 23 52
+partition number 0
+data from 131 23 55
+partition number 6
+data from 655 23 91
+partition number 6
+data from 691 23 87
+partition number 6
+data from 689 23 91
+partition number 6
+data from 682 23 69
+partition number 6
+data from 687 23 64
+partition number 6
+data from 685 23 99
+partition number 6
+data from 678 23 53
+writing page+ 12 50
+ temp writePage
+temp write page successfull
+partition number 6
+data from 676 23 80
+partition number 6
+data from 668 23 92
+partition number 6
+data from 749 23 76
+partition number 6
+data from 704 23 50
+partition number 6
+data from 747 23 54
+partition number 6
+data from 736 23 57
+partition number 6
+data from 710 23 53
+partition number 2
+data from 294 23 51
+partition number 2
+data from 271 23 94
+partition number 2
+data from 293 23 99
+partition number 2
+data from 283 23 88
+partition number 2
+data from 273 23 67
+partition number 2
+data from 340 23 70
+partition number 2
+data from 321 23 64
+partition number 2
+data from 312 23 82
+partition number 2
+data from 330 23 65
+partition number 1
+data from 183 23 66
+partition number 1
+data from 168 23 100
+partition number 1
+data from 173 23 79
+partition number 1
+data from 186 23 59
+partition number 1
+data from 187 23 60
+partition number 1
+data from 197 23 51
+partition number 1
+data from 182 23 55
+partition number 1
+data from 233 23 98
+partition number 1
+data from 237 23 51
+partition number 1
+data from 213 23 94
+partition number 1
+data from 224 23 82
+partition number 5
+data from 578 23 83
+partition number 5
+data from 577 23 93
+partition number 5
+data from 638 23 70
+partition number 5
+data from 603 23 94
+partition number 5
+data from 647 23 91
+partition number 5
+data from 606 23 56
+partition number 5
+data from 621 23 68
+partition number 5
+data from 615 23 58
+partition number 5
+data from 625 23 93
+partition number 5
+data from 627 23 96
+partition number 5
+data from 626 24 92
+partition number 5
+data from 623 24 89
+partition number 5
+data from 635 24 99
+partition number 5
+data from 586 24 84
+partition number 5
+data from 588 24 73
+partition number 5
+data from 565 24 68
+partition number 5
+data from 584 24 65
+partition number 5
+data from 564 24 57
+partition number 1
+data from 226 24 96
+partition number 1
+data from 250 24 83
+partition number 1
+data from 221 24 65
+partition number 1
+data from 202 24 76
+partition number 1
+data from 191 24 68
+writing page+ 13 50
+ temp writePage
+temp write page successfull
+partition number 1
+data from 174 24 89
+partition number 1
+data from 167 24 83
+partition number 1
+data from 157 24 85
+partition number 1
+data from 158 24 69
+partition number 1
+data from 175 24 66
+partition number 2
+data from 334 24 94
+partition number 2
+data from 318 24 81
+partition number 2
+data from 327 24 80
+partition number 2
+data from 263 24 66
+partition number 2
+data from 251 24 73
+partition number 2
+data from 295 24 94
+partition number 2
+data from 291 24 89
+partition number 2
+data from 256 24 88
+partition number 2
+data from 289 24 60
+partition number 2
+data from 268 24 100
+partition number 2
+data from 279 24 73
+partition number 2
+data from 277 24 51
+partition number 2
+data from 272 24 96
+partition number 6
+data from 702 24 68
+partition number 6
+data from 706 24 91
+partition number 6
+data from 707 24 51
+partition number 6
+data from 739 24 76
+partition number 6
+data from 735 24 53
+partition number 6
+data from 718 24 95
+partition number 6
+data from 731 24 72
+partition number 6
+data from 684 24 71
+partition number 6
+data from 679 24 82
+partition number 6
+data from 656 24 59
+partition number 6
+data from 696 24 64
+partition number 4
+data from 509 24 61
+partition number 4
+data from 545 24 54
+partition number 4
+data from 506 24 55
+partition number 4
+data from 541 24 75
+partition number 4
+data from 528 24 73
+partition number 4
+data from 501 24 57
+partition number 4
+data from 496 24 89
+partition number 4
+data from 452 24 68
+partition number 4
+data from 489 24 61
+partition number 4
+data from 477 24 78
+partition number 4
+data from 470 24 86
+partition number 8
+data from 908 24 84
+partition number 8
+data from 899 24 71
+partition number 8
+data from 886 24 84
+partition number 8
+data from 869 24 51
+partition number 8
+data from 889 24 71
+partition number 8
+data from 898 24 64
+partition number 8
+data from 881 24 76
+partition number 3
+data from 435 24 58
+partition number 3
+data from 436 24 50
+partition number 3
+data from 433 24 83
+writing page+ 14 50
+ temp writePage
+temp write page successfull
+partition number 3
+data from 419 24 99
+partition number 3
+data from 428 24 88
+partition number 3
+data from 383 24 54
+partition number 3
+data from 384 24 99
+partition number 3
+data from 386 24 91
+partition number 3
+data from 387 24 69
+partition number 3
+data from 361 24 75
+partition number 3
+data from 394 24 70
+partition number 7
+data from 848 24 74
+partition number 7
+data from 844 24 65
+partition number 7
+data from 811 24 81
+partition number 7
+data from 831 24 83
+partition number 7
+data from 815 24 78
+partition number 7
+data from 826 24 54
+partition number 7
+data from 824 24 87
+partition number 7
+data from 820 24 86
+partition number 7
+data from 782 24 71
+partition number 7
+data from 771 24 97
+partition number 7
+data from 797 24 65
+partition number 0
+data from 123 24 61
+partition number 0
+data from 139 24 52
+partition number 0
+data from 118 24 72
+partition number 0
+data from 134 24 81
+partition number 0
+data from 112 24 92
+partition number 0
+data from 111 24 68
+partition number 0
+data from 110 24 96
+partition number 0
+data from 145 24 74
+partition number 0
+data from 108 24 88
+partition number 0
+data from 54 24 82
+partition number 0
+data from 56 24 51
+partition number 0
+data from 96 24 51
+partition number 0
+data from 93 24 91
+partition number 0
+data from 81 24 60
+partition number 0
+data from 77 24 99
+partition number 0
+data from 2 24 91
+partition number 0
+data from 23 24 68
+partition number 0
+data from 47 24 94
+partition number 0
+data from 46 24 81
+partition number 0
+data from 8 24 93
+partition number 0
+data from 11 24 95
+partition number 0
+data from 13 24 81
+partition number 0
+data from 35 24 75
+partition number 0
+data from 32 24 79
+partition number 0
+data from 27 24 81
+partition number 0
+data from 1 24 84
+partition number 0
+data from 36 25 52
+partition number 0
+data from 4 25 86
+partition number 0
+data from 30 25 89
+partition number 0
+data from 28 25 89
+partition number 0
+data from 49 25 68
+writing page+ 15 50
+ temp writePage
+temp write page successfull
+partition number 0
+data from 71 25 60
+partition number 0
+data from 100 25 54
+partition number 0
+data from 87 25 58
+partition number 0
+data from 83 25 74
+partition number 0
+data from 70 25 87
+partition number 0
+data from 105 25 88
+partition number 0
+data from 133 25 77
+partition number 0
+data from 101 25 97
+partition number 7
+data from 770 25 78
+partition number 7
+data from 758 25 74
+partition number 7
+data from 757 25 100
+partition number 7
+data from 774 25 77
+partition number 7
+data from 798 25 79
+partition number 7
+data from 780 25 78
+partition number 7
+data from 846 25 71
+partition number 7
+data from 850 25 100
+partition number 7
+data from 842 25 53
+partition number 7
+data from 817 25 78
+partition number 7
+data from 814 25 77
+partition number 7
+data from 813 25 88
+partition number 7
+data from 812 25 53
+partition number 7
+data from 802 25 65
+partition number 8
+data from 866 25 80
+reading data of 18
+reading data of block 18 in merge function
+in read data ../data/temp/student_data_Page18
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+number of rows in that block 10
+partition number 8
+data from 852 25 78
+partition number 8
+data from 896 25 60
+partition number 8
+data from 858 25 85
+partition number 8
+data from 860 25 77
+partition number 8
+data from 892 25 53
+partition number 8
+data from 890 25 88
+partition number 8
+data from 879 25 88
+partition number 8
+data from 880 25 85
+partition number 8
+data from 901 25 64
+partition number 8
+data from 907 25 81
+partition number 2
+data from 286 25 73
+partition number 2
+data from 292 25 60
+partition number 2
+data from 269 25 88
+partition number 2
+data from 278 25 68
+partition number 2
+data from 296 25 64
+partition number 2
+data from 275 25 96
+partition number 2
+data from 254 25 78
+partition number 2
+data from 341 25 69
+partition number 4
+data from 488 25 60
+partition number 4
+data from 457 25 99
+partition number 4
+data from 459 25 51
+partition number 4
+data from 460 25 87
+partition number 4
+data from 484 25 84
+partition number 4
+data from 482 25 77
+partition number 4
+data from 466 25 75
+partition number 4
+data from 499 25 80
+partition number 4
+data from 469 25 59
+writing page+ 16 50
+ temp writePage
+temp write page successfull
+partition number 4
+data from 550 25 97
+partition number 4
+data from 507 25 83
+partition number 4
+data from 525 25 63
+partition number 5
+data from 557 25 100
+partition number 5
+data from 570 25 66
+partition number 5
+data from 579 25 65
+partition number 5
+data from 551 25 62
+partition number 5
+data from 574 25 90
+partition number 5
+data from 572 25 54
+partition number 5
+data from 637 25 72
+partition number 5
+data from 640 25 92
+partition number 5
+data from 636 25 57
+partition number 5
+data from 624 25 65
+partition number 5
+data from 611 25 75
+partition number 5
+data from 630 25 93
+partition number 5
+data from 612 25 64
+partition number 5
+data from 619 25 68
+partition number 1
+data from 179 25 91
+partition number 1
+data from 156 25 68
+partition number 1
+data from 196 25 70
+partition number 1
+data from 190 25 63
+partition number 1
+data from 189 25 54
+partition number 1
+data from 177 25 95
+partition number 1
+data from 242 25 89
+partition number 1
+data from 234 25 80
+partition number 1
+data from 223 25 93
+partition number 1
+data from 222 25 57
+partition number 1
+data from 217 25 90
+partition number 1
+data from 208 25 80
+partition number 1
+data from 206 25 66
+partition number 6
+data from 686 25 89
+partition number 6
+data from 658 25 90
+partition number 6
+data from 694 25 100
+partition number 6
+data from 675 25 54
+partition number 6
+data from 661 25 85
+partition number 6
+data from 666 25 50
+partition number 6
+data from 651 25 62
+partition number 6
+data from 742 25 100
+partition number 6
+data from 738 25 94
+partition number 6
+data from 709 25 87
+partition number 6
+data from 714 25 84
+partition number 6
+data from 732 25 74
+partition number 6
+data from 722 25 93
+partition number 3
+data from 363 25 87
+partition number 3
+data from 400 25 94
+partition number 3
+data from 360 25 57
+partition number 3
+data from 362 25 55
+partition number 3
+data from 364 25 84
+partition number 3
+data from 382 25 99
+partition number 3
+data from 381 25 66
+writing page+ 17 50
+ temp writePage
+temp write page successfull
+partition number 3
+data from 377 25 79
+partition number 3
+data from 405 25 81
+partition number 3
+data from 427 25 90
+partition number 3
+data from 412 25 88
+partition number 3
+data from 429 25 66
+partition number 3
+data from 444 25 95
+partition number 3
+data from 416 25 98
+partition number 3
+data from 417 25 61
+partition number 3
+data from 432 25 82
+partition number 3
+data from 421 25 100
+writing page+ 18 10
+ temp writePage
+temp write page successfull
+reading data from temp pages../data/temp/temp_student_data_Page0
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page1
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page2
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page3
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page4
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page5
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page6
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page7
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page8
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page9
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page10
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page11
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page12
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page13
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page14
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page15
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page16
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page17
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+reading data from temp pages../data/temp/temp_student_data_Page18
+BufferManager::writePage
+Page::Page
+Page::writePage
+File deleted successfully.
+
+merge completed
+executeSORT
+ParseQuery::clear
+clear
+
+Reading New Command: 

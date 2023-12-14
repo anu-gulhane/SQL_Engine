@@ -1,0 +1,18 @@
+LOAD Student
+LOAD Marks
+LOAD Advisor
+q3_cross <- CROSS Student Advisor
+
+EXPORT q3_cross
+
+q3_select <- SELECT Advisor_id == Adv_Id FROM q3_cross
+
+EXPORT q3_select
+
+q3_final <- SELECT Stud_sex != Adv_sex FROM q3_select
+
+EXPORT q3_final
+
+q_c <- PROJECT Stud_Id,Adv_Id,Stud_sex,Adv_sex FROM q3_final
+
+EXPORT q_c

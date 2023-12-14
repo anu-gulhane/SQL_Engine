@@ -1,0 +1,8 @@
+LOAD Student
+LOAD Marks
+LOAD Advisor
+QUESA <- SELECT Stud_sex == 0 FROM Student
+EXPORT QUESA
+1A <- PROJECT Stud_Id,Stud_age FROM QUESA
+EXPORT 1A
+

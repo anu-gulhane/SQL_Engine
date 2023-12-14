@@ -1,0 +1,28 @@
+LOAD Student
+LOAD Marks
+LOAD Advisor
+q5 <- SELECT Stud_sex == 1 FROM Student
+
+EXPORT q5_f
+
+q5_1 <- SELECT Advisor_id == 1 FROM q5
+
+EXPORT q5_1
+
+q5_cross <- CROSS q5_1 Marks
+
+EXPORT q5_cross
+
+q5_select <- SELECT q5_1_Stud_Id == Marks_Stud_Id FROM q5_cross
+
+EXPORT q5_select
+
+q5_final <- SELECT Maths_marks > 70 FROM q5_select
+
+EXPORT q5_final
+
+q_e <- PROJECT q5_1_Stud_Id,Maths_marks FROM q5_final
+
+EXPORT q_e
+
+
